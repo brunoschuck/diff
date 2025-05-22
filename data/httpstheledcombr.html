@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.v="1.2.3",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",t=>{this.persisted=t.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(t){if(document.hidden){t._triggerListener();return}this.triggerEvents.forEach(e=>window.addEventListener(e,t.userEventHandler,{passive:!0})),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(t){t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(t=>{this._isClickPending?this._pendingClickFinished=t:t()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(t,e,r){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(r,event.target.getAttribute(e)),event.target.removeAttribute(e))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{if(e.hasAttribute("src")){let r=new URL(e.src).origin;r!==location.origin&&t.push({src:r,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this._batchInjectResourceHints(t,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _transformScript(t){return new Promise((await this._littleBreath(),navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)?e=>{let r=document.createElement("script");[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),r.setAttribute(e,t.nodeValue))}),t.text&&(r.text=t.text),r.hasAttribute("src")?(r.addEventListener("load",e),r.addEventListener("error",e)):(r.text=t.text,e());try{t.parentNode.replaceChild(r,t)}catch(i){e()}}:async e=>{function r(){t.setAttribute("data-rocket-status","failed"),e()}try{let i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");t.text,i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",function r(){t.setAttribute("data-rocket-status","executed"),e()}),t.addEventListener("error",r),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}catch(s){r()}})}async _loadScriptsFromList(t){let e=t.shift();return e&&e.isConnected?(await this._transformScript(e),this._loadScriptsFromList(t)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(t,e){var r=document.createDocumentFragment();t.forEach(t=>{let i=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(i){let n=document.createElement("link");n.href=i,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),r.appendChild(n),this.trash.push(n)}}),document.head.appendChild(r)}_delayEventListeners(t){let e={};function r(t,r){!function t(r){!e[r]&&(e[r]={originalFunctions:{add:r.addEventListener,remove:r.removeEventListener},eventsToRewrite:[]},r.addEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.add.apply(r,arguments)},r.removeEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.remove.apply(r,arguments)});function i(t){return e[r].eventsToRewrite.indexOf(t)>=0?"rocket-"+t:t}}(t),e[t].eventsToRewrite.push(r)}function i(t,e){let r=t[e];Object.defineProperty(t,e,{get:()=>r||function(){},set(i){t["rocket"+e]=r=i}})}r(document,"DOMContentLoaded"),r(window,"DOMContentLoaded"),r(window,"load"),r(window,"pageshow"),r(document,"readystatechange"),i(document,"onreadystatechange"),i(window,"onload"),i(window,"onpageshow")}_delayJQueryReady(t){let e;function r(r){if(r&&r.fn&&!t.allJQueries.includes(r)){r.fn.ready=r.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(r):document.addEventListener("rocket-DOMContentLoaded",()=>e.bind(document)(r)),r([])};let i=r.fn.on;r.fn.on=r.fn.init.prototype.on=function(){if(this[0]===window){function t(t){return t.split(" ").map(t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=t(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(e=>{let r=arguments[0][e];delete arguments[0][e],arguments[0][t(e)]=r})}return i.apply(this,arguments),this},t.allJQueries.push(r)}e=r}r(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){r(t)}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this._littleBreath();let t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let t=new Map;document.write=document.writeln=function(e){let r=document.currentScript;r||console.error("WPRocket unable to document.write this: "+e);let i=document.createRange(),n=r.parentElement,s=t.get(r);void 0===s&&(s=r.nextSibling,t.set(r,s));let a=document.createDocumentFragment();i.setStart(a,0),a.appendChild(i.createContextualFragment(e)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}_emptyTrash(){this.trash.forEach(t=>t.remove())}static run(){let t=new RocketLazyLoadScripts;t._addUserInteractionListener(t)}}RocketLazyLoadScripts.run();</script>
+  	
+  	<meta name="viewport" content="width=device-width,initial-scale=1" />
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta property="og:image" content="https://theled.com.br/wp-content/uploads/2023/09/Painel-de-LED-Outdoor-AmPm-1-768x512-1.webp" />
+
+  	<link rel="shortcut icon" href="https://theled.com.br/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="https://theled.com.br/favicon.ico" type="image/x-icon">
+
+  	<meta property="og:image" content="https://theled.com.br/wp-content/themes/theled/assets/img/logo.webp" />
+	<meta name="keywords" content="Painéis de led, led, inovação" />
+  	<meta name="author" content="MM" />
+	
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KMGGV8J');</script>
+<!-- End Google Tag Manager -->
+  
+
+  <style>
+    .bannerHome {
+      background: black;
+      height: min-content;
+      min-height: 400px;
+    }
+
+    .bannerHome .swiper-horizontal>.swiper-pagination-bullets,
+    .bannerHome .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .bannerHome .swiper-pagination-custom,
+    .bannerHome .swiper-pagination-fraction {
+      bottom: 37px;
+    }
+
+    .bannerHome *,
+    .bannerHome h1,
+    .bannerHome h2 {
+      color: white;
+    }
+
+    .bannerHome .mainSlide {
+      position: relative;
+      padding: 37px 0;
+    }
+
+    .bannerHome .mainSlide>img {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .bannerHome .mainSlide .container {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .bannerHome .mainSlide .container p {
+      font-size: 18px;
+      letter-spacing: 3px;
+      line-height: 1.1;
+      max-width: 40ch;
+    }
+
+    .bannerHome .mainSlide .container h2 {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+      letter-spacing: 3px;
+      font-size: 24px;
+    }
+
+    .bannerHome .mainSlide .container h2::after,
+    .bannerHome .mainSlide .container h1::after {
+      display: block;
+    }
+
+    .bannerHome .mainSlide .container h2::after {
+      content: url('https://theled.com.br/wp-content/themes/theled/assets/img/linemenor.webp');
+      margin: 38px auto;
+    }
+
+    .bannerHome .mainSlide .container h1 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      max-width: 44ch;
+      letter-spacing: 2px;
+    }
+
+    .bannerHome .mainSlide .container h1::after {
+      content: url('https://theled.com.br/wp-content/themes/theled/assets/img/linhah1.webp');
+      margin-top: 40px;
+    }
+
+    .bannerHome .mainSlide .container img {
+      margin-bottom: 66px;
+    }
+
+    .bannerHome .mainSlide.b2 .container,
+    .bannerHome .mainSlide.b3 .container {
+      text-align: center;
+    }
+
+    .bannerHome .mainSlide.b3 .container p {
+      max-width: 21ch;
+    }
+
+    .bannerHome .mainSlide.b3 .container h2 {
+      margin-bottom: 12px;
+    }
+
+    .bannerHome .mainSlide.b3 .container h2::after {
+      margin: 20px 0;
+    }
+
+    @media (min-width: 900px) {
+      .bannerHome {
+        height: 450px;
+      }
+
+      .bannerHome .mainSlide>img {
+        height: 700px;
+      }
+
+      .bannerHome .mainSlide .container p {
+        font-size: 25px;
+      }
+
+      .bannerHome .mainSlide .container h2 {
+        font-size: 44px;
+      }
+
+      .bannerHome .mainSlide .container h1::after {
+        margin-top: 100px;
+      }
+
+      .bannerHome .mainSlide.b2 .container,
+      .bannerHome .mainSlide.b3 .container {
+        text-align: left;
+      }
+
+      .bannerHome .logo_hero {
+        width: 630px;
+      }
+
+      .bannerHome .mainSlide.b2 .container {
+        align-items: flex-start;
+      }
+
+      .bannerHome .mainSlide.b3 .container {
+        align-items: flex-end;
+      }
+    }
+  </style>
+  <!-- Inicio Wordpress Header -->
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" href="https://theled.com.br/" hreflang="pt" />
+<link rel="alternate" href="https://theled.com.br/en/la-empresa/" hreflang="en" />
+<link rel="alternate" href="https://theled.com.br/es/la-empresa/" hreflang="es" />
+
+	<!-- This site is optimized with the Yoast SEO plugin v25.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>The LED: Soluções em Painel de LED</title>
+	<meta name="description" content="Somos a maior e mais inovadora empresa de painel de LED! Conheça nossas soluções e saiba como aumentar a performance do seu negócio." />
+	<link rel="canonical" href="https://theled.com.br/" />
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:locale:alternate" content="en_US" />
+	<meta property="og:locale:alternate" content="es_ES" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="The LED: Soluções em Painel de LED" />
+	<meta property="og:description" content="Somos a maior e mais inovadora empresa de painel de LED! Conheça nossas soluções e saiba como aumentar a performance do seu negócio." />
+	<meta property="og:url" content="https://theled.com.br/" />
+	<meta property="og:site_name" content="THE LED: Soluções em Paineis de LED" />
+	<meta property="article:publisher" content="https://www.facebook.com/theledoficial/" />
+	<meta property="article:modified_time" content="2025-04-23T13:32:50+00:00" />
+	<meta property="og:image" content="https://theled.com.br/wp-content/uploads/2023/09/Painel-de-LED-Outdoor-AmPm-1-768x512-1.webp" />
+	<meta property="og:image:width" content="768" />
+	<meta property="og:image:height" content="512" />
+	<meta property="og:image:type" content="image/webp" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://theled.com.br/","url":"https://theled.com.br/","name":"The LED: Soluções em Painel de LED","isPartOf":{"@id":"https://theled.com.br/#website"},"about":{"@id":"https://theled.com.br/#organization"},"primaryImageOfPage":{"@id":"https://theled.com.br/#primaryimage"},"image":{"@id":"https://theled.com.br/#primaryimage"},"thumbnailUrl":"https://theled.com.br/wp-content/uploads/2023/09/Painel-de-LED-Outdoor-AmPm-1-768x512-1.webp","datePublished":"2023-07-22T20:40:02+00:00","dateModified":"2025-04-23T13:32:50+00:00","description":"Somos a maior e mais inovadora empresa de painel de LED! Conheça nossas soluções e saiba como aumentar a performance do seu negócio.","breadcrumb":{"@id":"https://theled.com.br/#breadcrumb"},"inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction","target":["https://theled.com.br/"]}]},{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://theled.com.br/#primaryimage","url":"https://theled.com.br/wp-content/uploads/2023/09/Painel-de-LED-Outdoor-AmPm-1-768x512-1.webp","contentUrl":"https://theled.com.br/wp-content/uploads/2023/09/Painel-de-LED-Outdoor-AmPm-1-768x512-1.webp","width":768,"height":512},{"@type":"BreadcrumbList","@id":"https://theled.com.br/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Início"}]},{"@type":"WebSite","@id":"https://theled.com.br/#website","url":"https://theled.com.br/","name":"THE LED: Soluções em Paineis de LED","description":"Somos a maior empresa em Soluções com Painéis de LED. Oferecemos pacotes completos de serviços para comunicação visual e publicidade e residenciais.","publisher":{"@id":"https://theled.com.br/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://theled.com.br/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"pt-BR"},{"@type":"Organization","@id":"https://theled.com.br/#organization","name":"THE LED: Soluções em Paineis de LED","url":"https://theled.com.br/","logo":{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://theled.com.br/#/schema/logo/image/","url":"https://theled.com.br/wp-content/uploads/2023/09/logo-THE-LED.jpg","contentUrl":"https://theled.com.br/wp-content/uploads/2023/09/logo-THE-LED.jpg","width":1080,"height":1080,"caption":"THE LED: Soluções em Paineis de LED"},"image":{"@id":"https://theled.com.br/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/theledoficial/","https://www.instagram.com/theledoficial/"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='stylesheet' id='wp-block-library-css' href='https://theled.com.br/wp-includes/css/dist/block-library/style.min.css?ver=6.8.1' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='stylesheet' id='style-the-led-css' href='https://theled.com.br/wp-content/cache/min/1/wp-content/themes/theled/assets/css/style.css?ver=1747884076' type='text/css' media='' />
+<link data-minify="1" rel='stylesheet' id='swipper-css' href='https://theled.com.br/wp-content/cache/min/1/wp-content/themes/theled/assets/css/swipper.css?ver=1747884076' type='text/css' media='' />
+<link data-minify="1" rel='stylesheet' id='slb_core-css' href='https://theled.com.br/wp-content/cache/min/1/wp-content/plugins/simple-lightbox/client/css/app.css?ver=1747884076' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="https://theled.com.br/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://theled.com.br/wp-json/wp/v2/pages/9" /><link rel='shortlink' href='https://theled.com.br/' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://theled.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftheled.com.br%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://theled.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftheled.com.br%2F&#038;format=xml" />
+		<style type="text/css" id="wp-custom-css">
+			.ribbon {
+      animation: slideRibbon 25s linear infinite;
+}
+
+.bannerArtistico .container{
+	background-size:auto 100%!important;
+}
+
+@keyframes slideRibbon {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -1824px; /* The image width */
+  }
+}
+
+@media (min-width: 900px) {
+            .bannerProduto {
+                height: 350px!important;
+            }
+	    .bannerHome {
+        height: auto;
+    }
+	.bannerHome .mainSlide{
+		padding:0;
+	}
+}
+	
+			</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>  <!-- Final Wordpress Header -->
+<meta name="p:domain_verify" content="b584b2b2530f1598ecfd41a24ced9932"/>
+</head>
+
+<body>
+ 
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMGGV8J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="container">
+
+  
+
+  <div class="left d-flex">
+    <a href="/" class="logo">
+      <img width="63" height="37" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2063%2037'%3E%3C/svg%3E" alt="The Led" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/09/Ativo-8@4x.png" /><noscript><img width="63" height="37" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/09/Ativo-8@4x.png" alt="The Led" /></noscript>
+    </a>
+
+    <nav class="nav-desck">
+      <ul id="menu-menu-principal" class="d-flex"><li id="menu-item-29820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-29820"><a href="https://theled.com.br/" aria-current="page">Home</a></li>
+<li id="menu-item-456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-456"><a href="https://theled.com.br/a-empresa/">A Empresa</a></li>
+<li id="menu-item-195" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-195"><a href="https://theled.com.br/cases/">Cases</a></li>
+<li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="https://theled.com.br/produtos/">Produtos</a></li>
+<li id="menu-item-198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-198"><a href="https://theled.com.br/servicos/">Serviços</a></li>
+<li id="menu-item-194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><a href="https://theled.com.br/blog/">Blog</a></li>
+<li id="menu-item-65387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65387"><a href="https://theled.com.br/the-room/">NÚCLEO DE CRIAÇÃO</a></li>
+<li id="menu-item-126163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126163"><a href="https://theled.com.br/fale-conosco/">Fale Conosco</a></li>
+</ul>    </nav>
+
+    <nav class="nav-mobile">
+      <div class="header_nav_mobile">
+        <a href="/" class="logo">
+          <img width="63" height="37" style="object-fit: contain" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2063%2037'%3E%3C/svg%3E" alt="The Led" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/09/Ativo-8@4x.png" /><noscript><img width="63" height="37" loading="lazy" style="object-fit: contain" src="https://theled.com.br/wp-content/uploads/2023/09/Ativo-8@4x.png" alt="The Led" /></noscript>
+        </a>
+        <button class="close">X</button>
+      </div>
+      <ul id="menu-menu-principal-1" class="d-flex"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-29820"><a href="https://theled.com.br/" aria-current="page">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-456"><a href="https://theled.com.br/a-empresa/">A Empresa</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-195"><a href="https://theled.com.br/cases/">Cases</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="https://theled.com.br/produtos/">Produtos</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-198"><a href="https://theled.com.br/servicos/">Serviços</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><a href="https://theled.com.br/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65387"><a href="https://theled.com.br/the-room/">NÚCLEO DE CRIAÇÃO</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126163"><a href="https://theled.com.br/fale-conosco/">Fale Conosco</a></li>
+</ul>
+      <!--        <a href="https://theled.com/" class="btn">SOLICITE ORÇAMENTO</a> -->
+    </nav>
+  </div>
+
+  <div class="right d-flex">
+    <!--      <a href="https://theled.com/" class="btn">SOLICITE ORÇAMENTO</a> -->
+
+    <ul class="lang">
+      <li>
+        <a href="/"><img width="26" height="17" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2026%2017'%3E%3C/svg%3E" alt="" data-lazy-src="https://theled.com.br/wp-content/uploads/2024/07/br-flag.png" /><noscript><img width="26" height="17" loading="lazy" src="https://theled.com.br/wp-content/uploads/2024/07/br-flag.png" alt="" /></noscript>
+          PT</a>
+      </li>
+      <li>
+        <a href="/es"><img width="26" height="17" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2026%2017'%3E%3C/svg%3E" alt="" data-lazy-src="https://theled.com.br/wp-content/uploads/2024/07/spain-flag.png" /><noscript><img width="26" height="17" loading="lazy" src="https://theled.com.br/wp-content/uploads/2024/07/spain-flag.png" alt="" /></noscript>ESP</a>
+      </li>
+      <li>
+        <a href="https://theled.com/"><img width="26" height="17" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2026%2017'%3E%3C/svg%3E" alt="" data-lazy-src="https://theled.com.br/wp-content/uploads/2024/07/us-flag.png" /><noscript><img width="26" height="17" loading="lazy" src="https://theled.com.br/wp-content/uploads/2024/07/us-flag.png" alt="" /></noscript>ENG</a>
+      </li>
+    </ul>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <img width="26" height="17" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2026%2017'%3E%3C/svg%3E" alt="" data-lazy-src="https://theled.com.br/wp-content/uploads/2024/07/br-flag.png" /><noscript><img width="26" height="17" loading="lazy" src="https://theled.com.br/wp-content/uploads/2024/07/br-flag.png" alt="" /></noscript>
+        PT
+      </button>
+      <div class="dropdown-content">
+        <a href="/es">
+          <img width="26" height="17" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2026%2017'%3E%3C/svg%3E" alt="" data-lazy-src="https://theled.com.br/wp-content/uploads/2024/07/spain-flag.png" /><noscript><img width="26" height="17" loading="lazy" src="https://theled.com.br/wp-content/uploads/2024/07/spain-flag.png" alt="" /></noscript>
+          ESP
+        </a>
+        <a href="https://theled.com/">
+          <img width="26" height="17" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2026%2017'%3E%3C/svg%3E" alt="" data-lazy-src="https://theled.com.br/wp-content/uploads/2024/07/us-flag.png" /><noscript><img width="26" height="17" loading="lazy" src="https://theled.com.br/wp-content/uploads/2024/07/us-flag.png" alt="" /></noscript>
+          ENG
+        </a>
+      </div>
+    </div>
+    <button class="mobile" aria-label="Menu">
+      <svg aria-hidden="true" width="40" height="20" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 40H60V33.3333H0V40ZM0 23.3333H60V16.6667H0V23.3333ZM0 0V6.66667H60V0H0Z" fill="#000"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+<style>
+.bannerHome .mainSlide .container h1::after {
+  content: "" !important;
+}
+
+@media screen and (min-width:768px){
+  .bannerHome .mainSlide .bannerDesktop{
+    display:block;
+  }
+
+  .bannerHome .mainSlide .bannerMobile{
+    display:none;
+  }
+
+}
+
+@media screen and (max-width:767px){
+  .bannerHome .mainSlide .bannerDesktop{
+    display:none;
+  }
+
+  .bannerHome .mainSlide{
+    padding: 0;
+  }
+}
+
+</style>
+
+<main>
+  <div class="swiper bannerHome">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide mainSlide" data-hash="slide1">
+        <div class="bannerDesktop">
+          <a href="https://theled.com.br/a-empresa/" target="_blank">
+            <img width="100%" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E" alt="The Led" data-lazy-src="https://theled.com.br/wp-content/uploads/2025/02/BANNER-SITE-2025_01.webp" /><noscript><img loading="lazy" width="100%" src="https://theled.com.br/wp-content/uploads/2025/02/BANNER-SITE-2025_01.webp" alt="The Led" /></noscript>
+          </a>
+        </div>
+
+        <div class="bannerMobile">
+          <a href="https://theled.com.br/a-empresa/" target="_blank">
+            <img width="100%" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E" alt="The Led" data-lazy-src="https://theled.com.br/wp-content/uploads/2025/02/banner-mobile_01.webp" /><noscript><img loading="lazy" width="100%" src="https://theled.com.br/wp-content/uploads/2025/02/banner-mobile_01.webp" alt="The Led" /></noscript>
+          </a>
+        </div>
+      </div>
+
+      <div class="swiper-slide mainSlide b2" data-hash="slide2">
+        <div class="bannerDesktop">
+          <a href="https://theled.com.br/the-room/" target="_blank">
+            <img width="100%" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E" alt="SOMOS UMA AGÊNCIA DE CRIAÇÃO, DESIGN E ESTRATÉGIA QUE DÃO VIDA ÀS SUAS CAMPANHAS" data-lazy-src="https://theled.com.br/wp-content/uploads/2025/02/BANNER-SITE-2025_02.webp" /><noscript><img loading="lazy" width="100%" src="https://theled.com.br/wp-content/uploads/2025/02/BANNER-SITE-2025_02.webp" alt="SOMOS UMA AGÊNCIA DE CRIAÇÃO, DESIGN E ESTRATÉGIA QUE DÃO VIDA ÀS SUAS CAMPANHAS" /></noscript>
+          </a>
+        </div>
+
+        <div class="bannerMobile">
+          <a href="https://theled.com.br/the-room/" target="_blank">
+            <img width="100%" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E" alt="The Led" data-lazy-src="https://theled.com.br/wp-content/uploads/2025/02/banner-mobile_02.webp" /><noscript><img loading="lazy" width="100%" src="https://theled.com.br/wp-content/uploads/2025/02/banner-mobile_02.webp" alt="The Led" /></noscript>
+          </a>
+        </div>
+      </div>
+
+      <div class="swiper-slide mainSlide b3" data-hash="slide3">
+        <div class="bannerDesktop">
+          <a href="https://theled.com.br/the-led-expande-para-latam-o-que-isso-significa-para-o-mercado/" target="_blank">
+            <img width="100%" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E" alt="WE KNOW HOW TO DOOH IT, TENHA CONTROLE TOTAL DE SUA REDE SOOH, GERENCIE SEU INVETÁRIO DO SEU JEITO" data-lazy-src="https://theled.com.br/wp-content/uploads/2025/02/BANNER-SITE-2025_03.webp" /><noscript><img loading="lazy" width="100%" src="https://theled.com.br/wp-content/uploads/2025/02/BANNER-SITE-2025_03.webp" alt="WE KNOW HOW TO DOOH IT, TENHA CONTROLE TOTAL DE SUA REDE SOOH, GERENCIE SEU INVETÁRIO DO SEU JEITO" /></noscript>
+          </a>
+        </div>
+
+        <div class="bannerMobile">
+          <a href="https://theled.com.br/the-led-expande-para-latam-o-que-isso-significa-para-o-mercado/" target="_blank">
+            <img width="100%" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E" alt="The Led" data-lazy-src="https://theled.com.br/wp-content/uploads/2025/02/banner-mobile_03.webp" /><noscript><img loading="lazy" width="100%" src="https://theled.com.br/wp-content/uploads/2025/02/banner-mobile_03.webp" alt="The Led" /></noscript>
+          </a>
+        </div>
+      </div>
+
+      <div class="swiper-slide mainSlide b4" data-hash="slide4">
+          <div class="bannerDesktop">
+            <a href="https://theled.com.br/blog/" target="_blank">
+              <img width="100%" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E" alt="INSIGHTS, TENDÊNCIAS E INOVAÇÃO. DESCUBRA TUDO SOBRE OOH, RETAIL MEDIA, VIRTUAL PRODUCTION E MUITO MAIS." data-lazy-src="https://theled.com.br/wp-content/uploads/2025/02/BANNER-SITE-2025_04.webp" /><noscript><img loading="lazy" width="100%" src="https://theled.com.br/wp-content/uploads/2025/02/BANNER-SITE-2025_04.webp" alt="INSIGHTS, TENDÊNCIAS E INOVAÇÃO. DESCUBRA TUDO SOBRE OOH, RETAIL MEDIA, VIRTUAL PRODUCTION E MUITO MAIS." /></noscript>
+            </a>
+          </div>
+
+          <div class="bannerMobile">
+          <a href="https://theled.com.br/blog/" target="_blank">
+            <img width="100%" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E" alt="The Led" data-lazy-src="https://theled.com.br/wp-content/uploads/2025/02/banner-mobile_04.webp" /><noscript><img loading="lazy" width="100%" src="https://theled.com.br/wp-content/uploads/2025/02/banner-mobile_04.webp" alt="The Led" /></noscript>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-pagination pagBannerHomer"></div>
+</main>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+  .secbanner{
+    padding:40px 0px;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  }
+
+  .swiper-slide .secbanner .secBannerDetails{
+    display:flex;
+    align-items: flex-start;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.swiper-slide .secbanner .secBannerDetails h2{
+    font-family:"Poppins";
+    font-size:48px;
+    font-weight:800;
+    
+}
+
+.swiper-slide .secbanner .secBannerDetails p{
+    font-family:"Poppins";
+    font-size:22px;
+    font-weight:300;
+    margin-bottom:16px;
+}
+
+.swiper-slide .secbanner .secBannerDetails .btn-secbanner{
+    transition:.2s linear;
+    font-size:22px;
+    font-weight:500;
+    width:auto;
+    display: inline-flex;
+    border:solid 2px;
+    padding:4px 22px;
+    text-transform:uppercase;
+}
+
+.swiper-slide .secbanner .secBannerDetails .btn-secbanner:hover{
+    background:white;
+    color:black;
+}
+
+@media screen and (max-width:769px){
+    .secbanner{
+    padding:40px 0px;
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    }
+    .swiper-slide .secbanner .secBannerImg{
+        order:0;
+    }
+
+    .swiper-slide .secbanner .secBannerImg img{
+        max-height:300px;
+        object-fit:contain;
+    }
+    
+    .swiper-slide .secbanner .secBannerDetails{
+        order:1;
+    }
+    .swiper-slide .secbanner .secBannerDetails{
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content:center;
+}
+    .swiper-slide .secbanner .secBannerDetails p{
+    font-family:"Poppins";
+    font-size:22px;
+    font-weight:300;
+    margin-bottom:16px;
+        text-align:center;
+}
+.pagBannerSec{
+    bottom:0!important;
+}
+
+    
+}
+</style>
+
+<main>
+  <div class="swiper bannerHome">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide secSlide" data-hash="slideSec1">
+        <div class="container secbanner">
+          <div class="secBannerDetails">
+            <h2>+de 10 mil projetos</h2>
+            <p>Descubra como nossas soluções transformam espaços e negócios</p>
+            <a href="https://theled.com.br/cases/" target="_blank" class="btn-secbanner">Conheça nossos cases</a>
+          </div>
+          <div class="secBannerImg">
+            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E" alt="+de 10 mil projetos" width="100%" data-lazy-src="https://theled.com.br/wp-content/uploads/2025/02/Sec1.webp"><noscript><img src="https://theled.com.br/wp-content/uploads/2025/02/Sec1.webp" alt="+de 10 mil projetos" width="100%"></noscript>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide secSlide" data-hash="slideSec2">
+        <div class="container secbanner">
+          <div class="secBannerDetails">
+            <h2>Totens Interativos</h2>
+            <p>Compre agora e aproveite os descontos. Estoque limitado!</p>
+            <a href="https://painel.theled.com.br/totens-interativos/" target="_blank" class="btn-secbanner">COMPRAR</a>
+          </div>
+          <div class="secBannerImg">
+            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E" alt="Totens Interativos" width="100%" data-lazy-src="https://theled.com.br/wp-content/uploads/2025/02/Sec2.webp"><noscript><img src="https://theled.com.br/wp-content/uploads/2025/02/Sec2.webp" alt="Totens Interativos" width="100%"></noscript>
+          </div>
+        </div>
+      </div>
+
+      
+
+    </div>
+    <div class="swiper-pagination pagBannerHomer pagBannerSec"></div>
+</main>
+<!-- SERVIÇOS -->
+<section class="servicesHome pd">
+  <div class="container">
+    <h2 class="title">Serviços <strong>THE LED</strong></h2>
+    <h3 class="desc">
+      <span style="text-transform: uppercase">
+        DO DESENVOLVIMENTO DO PROJETO DOS PAINÉIS DE LED À CRIAÇÃO E GERENCIAMENTO DE CONTEÚDO.</span>
+      <br />
+      Oferecemos um serviço completo com profissionais <br/>
+qualificados e produtos de altíssima qualidade e tecnologia.    </h3>
+
+    <ul class="services_list">
+                                  <li>
+            <img width="52" height="52" alt="icone de GERENCIAMENTO DE CONTEÚDO" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2052%2052'%3E%3C/svg%3E" alt="GERENCIAMENTO DE CONTEÚDO" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/gerenciamento.webp" /><noscript><img width="52" height="52" alt="icone de GERENCIAMENTO DE CONTEÚDO" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/gerenciamento.webp" alt="GERENCIAMENTO DE CONTEÚDO" /></noscript>
+            <h2>GERENCIAMENTO DE CONTEÚDO</h2>
+          </li>
+                            <li>
+            <img width="52" height="41" alt="icone de CONSULTORIA ESPECIALIZADA" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2052%2041'%3E%3C/svg%3E" alt="CONSULTORIA ESPECIALIZADA" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/consultoria.webp" /><noscript><img width="52" height="41" alt="icone de CONSULTORIA ESPECIALIZADA" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/consultoria.webp" alt="CONSULTORIA ESPECIALIZADA" /></noscript>
+            <h2>CONSULTORIA ESPECIALIZADA</h2>
+          </li>
+                            <li>
+            <img width="52" height="52" alt="icone de PROJETOS CUSTOMIZADOS" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2052%2052'%3E%3C/svg%3E" alt="PROJETOS CUSTOMIZADOS" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/projetos.webp" /><noscript><img width="52" height="52" alt="icone de PROJETOS CUSTOMIZADOS" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/projetos.webp" alt="PROJETOS CUSTOMIZADOS" /></noscript>
+            <h2>PROJETOS CUSTOMIZADOS</h2>
+          </li>
+                            <li>
+            <img width="52" height="47" alt="icone de CRIAÇÃO DE CONTEÚDO" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2052%2047'%3E%3C/svg%3E" alt="CRIAÇÃO DE CONTEÚDO" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/criacao.webp" /><noscript><img width="52" height="47" alt="icone de CRIAÇÃO DE CONTEÚDO" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/criacao.webp" alt="CRIAÇÃO DE CONTEÚDO" /></noscript>
+            <h2>CRIAÇÃO DE CONTEÚDO</h2>
+          </li>
+                            <li>
+            <img width="52" height="58" alt="icone de INSTALAÇÃO E ASSISTÊNCIA TÉCNICA" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2052%2058'%3E%3C/svg%3E" alt="INSTALAÇÃO E ASSISTÊNCIA TÉCNICA" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/instalacao.webp" /><noscript><img width="52" height="58" alt="icone de INSTALAÇÃO E ASSISTÊNCIA TÉCNICA" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/instalacao.webp" alt="INSTALAÇÃO E ASSISTÊNCIA TÉCNICA" /></noscript>
+            <h2>INSTALAÇÃO E ASSISTÊNCIA TÉCNICA</h2>
+          </li>
+                            <li>
+            <img width="52" height="52" alt="icone de SOLUÇÕES INTERATIVAS" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2052%2052'%3E%3C/svg%3E" alt="SOLUÇÕES INTERATIVAS" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/solucoes.webp" /><noscript><img width="52" height="52" alt="icone de SOLUÇÕES INTERATIVAS" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/solucoes.webp" alt="SOLUÇÕES INTERATIVAS" /></noscript>
+            <h2>SOLUÇÕES INTERATIVAS</h2>
+          </li>
+                        </ul>
+  </div>
+</section>
+<!-- SEGMENTOS -->
+<section class="segments pd">
+  <div class="container">
+    <h2 class="title tt"> SEGMENTOS</h2>
+    <h3 class="desc tt">
+          </h3>
+        <div class="motion_segments">
+      <div class="area_imgs">
+                              <img width="300" height="178" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20178'%3E%3C/svg%3E" alt="Aplicações dos painéis" class="img img_1" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/motion_img2.webp" /><noscript><img width="300" height="178" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/motion_img2.webp" alt="Aplicações dos painéis" class="img img_1" /></noscript>
+                      <img width="300" height="178" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20178'%3E%3C/svg%3E" alt="Aplicações dos painéis" class="img img_1" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/motionimg1.webp" /><noscript><img width="300" height="178" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/motionimg1.webp" alt="Aplicações dos painéis" class="img img_1" /></noscript>
+                        </div>
+      <ul>
+                              <li>Varejo</li>
+                      <li>Shoppings</li>
+                      <li>Corporativo</li>
+                      <li>Mídia Ooh</li>
+                      <li>Estúdios</li>
+                      <li>Live Marketing</li>
+                      <li>Residencial</li>
+                      <li>Controle</li>
+                        </ul>
+    </div>
+  </div>
+</section>
+<!-- NUMEROS -->
+<section class="numbers">
+  <div class="container">
+    <h2>
+      SOMOS A MAIOR E MAIS INOVADORA EMPRESA DE COMUNICAÇÃO VISUAL DIGITAL DO PAÍS, ESPECIALIZADA EM PAINÉIS DE LED.    </h2>
+
+    <div class="total">
+		                         
+		<span>
+            <span class="de"> +DE </span><img width="182" height="114" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20182%20114'%3E%3C/svg%3E" alt="+DE" data-lazy-src="https://theled.com.br/wp-content/uploads/2024/02/90-1.png" /><noscript><img width="182" height="114" loading="lazy" src="https://theled.com.br/wp-content/uploads/2024/02/90-1.png" alt="+DE" /></noscript>
+            MIL M2 DE PAINÉIS DE LED INSTALADOS          </span>
+				                  		<span  class="meio">
+            <span class="de"> +DE </span><img width="168" height="121" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20168%20121'%3E%3C/svg%3E" alt="+DE" data-lazy-src="https://theled.com.br/wp-content/uploads/2024/02/10-1.png" /><noscript><img width="168" height="121" loading="lazy" src="https://theled.com.br/wp-content/uploads/2024/02/10-1.png" alt="+DE" /></noscript>
+            MIL CASES DE SUCESSO          </span>
+				                   
+		<span>
+            <span class="de"> +DE </span><img width="183" height="107" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20183%20107'%3E%3C/svg%3E" alt="+DE" data-lazy-src="https://theled.com.br/wp-content/uploads/2024/02/40-1.png" /><noscript><img width="183" height="107" loading="lazy" src="https://theled.com.br/wp-content/uploads/2024/02/40-1.png" alt="+DE" /></noscript>
+            PRÊMIOS RECEBIDOS          </span>
+				                  </div>
+  </div>
+</section>
+
+<!-- TOP 10 PRODUTOS -->
+<section class="products">
+  <div class="container">
+    <h2 class="title"><strong>TOP 10</strong> PRODUTOS</h2>
+  </div>
+  <div class="swiper prod1">
+
+
+    <div class="swiper-wrapper">
+      
+              
+                    <a href="#" class="swiper-slide">
+            <img width="2200" height="696" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202200%20696'%3E%3C/svg%3E" alt="The SQUARE" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/0C2A1492.webp" /><noscript><img width="2200" height="696" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/0C2A1492.webp" alt="The SQUARE" /></noscript>
+            <div class="data-product d1">
+              <h2>The SQUARE                <span class="subtitle"></span>
+              </h2>
+              <h3>4,6cm ESPESSURA</h3>
+              <p>Fácil instalação direto na parede Manutenção 100% frontal</p>
+            </div>
+          </a>
+                  
+                    <a href="#" class="swiper-slide">
+            <img width="2200" height="696" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202200%20696'%3E%3C/svg%3E" alt="The MEGABANNER" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/IMG_1556.webp" /><noscript><img width="2200" height="696" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/IMG_1556.webp" alt="The MEGABANNER" /></noscript>
+            <div class="data-product d1">
+              <h2>The MEGABANNER                <span class="subtitle"></span>
+              </h2>
+              <h3></h3>
+              <p></p>
+            </div>
+          </a>
+                              
+    </div>
+  </div>
+
+  <!-- <div class="swiper prod2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img width="2200" height="696" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202200%20696'%3E%3C/svg%3E" alt="produto" data-lazy-src="https://theled.com.br/wp-content/themes/theled/assets/img/IMG_1556.webp" /><noscript><img width="2200" height="696" loading="lazy" src="https://theled.com.br/wp-content/themes/theled/assets/img/IMG_1556.webp" alt="produto" /></noscript>
+        <div class="data-product d2">
+          <h2>
+            THE MEGABANNER
+            <span class="subtitle">Impacto e Visibilidade</span>
+          </h2>
+
+          <p>Fácil instalação direto na parede Manutenção 100% frontal</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img width="2200" height="696" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202200%20696'%3E%3C/svg%3E" alt="produto" data-lazy-src="https://theled.com.br/wp-content/themes/theled/assets/img/IMG_1556.webp" /><noscript><img width="2200" height="696" loading="lazy" src="https://theled.com.br/wp-content/themes/theled/assets/img/IMG_1556.webp" alt="produto" /></noscript>
+        <div class="data-product d2">
+          <h2>
+            THE MEGABANNER
+            <span class="subtitle">Impacto e Visibilidade</span>
+          </h2>
+
+          <p>Fácil instalação direto na parede Manutenção 100% frontal</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</section>
+
+<!-- LISTAGEM DE PRODUTOS -->
+<section class="line">
+  <h2 class="title container">CONHEÇA TODA LINHA DE PAINÉIS THE LED</h2>
+  <div class="swiper lineHome">
+    <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide">
+                        <h3>THE<strong>GLASS</strong></h3>
+            <img width="202" height="202" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20202%20202'%3E%3C/svg%3E" alt="The GLASS" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/l1.webp" /><noscript><img width="202" height="202" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/l1.webp" alt="The GLASS" /></noscript>
+            <p>TRANSPARÊNCIA E CONTEÚDO NO MESMO PAINEL</p>
+          </a>
+                  <a href="#" class="swiper-slide">
+                        <h3>THE<strong>RETAIL</strong></h3>
+            <img width="221" height="221" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20221%20221'%3E%3C/svg%3E" alt="The RETAIL" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/s2.webp" /><noscript><img width="221" height="221" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/s2.webp" alt="The RETAIL" /></noscript>
+            <p>FACILIDADE NA INSTALAÇÃO E MANUTENÇÃO, ALÉM DE ÓTIMO CUSTO-BENEFÍCIO</p>
+          </a>
+                  <a href="#" class="swiper-slide">
+                        <h3>THE<strong>POSTER</strong></h3>
+            <img width="210" height="210" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20210%20210'%3E%3C/svg%3E" alt="The POSTER" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/l3.webp" /><noscript><img width="210" height="210" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/l3.webp" alt="The POSTER" /></noscript>
+            <p>VARIEDADE DE TAMANHOS E FORMATOS, MONTAGEM SIMPLES, RÁPIDA E FÁCIL</p>
+          </a>
+                  <a href="#" class="swiper-slide">
+                        <h3>THE<strong>OUT</strong></h3>
+            <img width="224" height="224" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20224%20224'%3E%3C/svg%3E" alt="The OUT" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/l4.webp" /><noscript><img width="224" height="224" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/l4.webp" alt="The OUT" /></noscript>
+            <p>IDEAL PARA EXTERNA ALTA VISIBILIDADE MESMO SOB SOL, À PROVA D´AGUA</p>
+          </a>
+                  <a href="#" class="swiper-slide">
+                        <h3>THE<strong>SQUARE</strong></h3>
+            <img width="205" height="204" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20205%20204'%3E%3C/svg%3E" alt="The SQUARE" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/s6.webp" /><noscript><img width="205" height="204" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/s6.webp" alt="The SQUARE" /></noscript>
+            <p>NÃO COMPROMETE ESPAÇO FÍSICO INSTALAÇÃO DIRETO NA PAREDE MANUTENÇÃO 100% FRONTAL.</p>
+          </a>
+                  <a href="#" class="swiper-slide">
+                        <h3>THE<strong>MEGABANNER</strong></h3>
+            <img width="168" height="180" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20168%20180'%3E%3C/svg%3E" alt="The MEGABANNER" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/l6.webp" /><noscript><img width="168" height="180" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/l6.webp" alt="The MEGABANNER" /></noscript>
+            <p>ALTO IMPACTO ESTRUTURA APENAS DE SUSPENSÃO. DIVERSOS TAMANHOS.</p>
+          </a>
+                  <a href="#" class="swiper-slide">
+                        <h3>THE<strong>TV</strong></h3>
+            <img width="1853" height="949" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201853%20949'%3E%3C/svg%3E" alt="The TV" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/TheTV_UPS.webp" /><noscript><img width="1853" height="949" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/TheTV_UPS.webp" alt="The TV" /></noscript>
+            <p>DIFERENTES OPÇÕES DE MÓDULOS COM ALTA RESOLUÇÃO MONTAGEM EM QUALQUER TAMANHO </p>
+          </a>
+                        </div>
+     <div class="swiper-pagination"></div>
+  </div>
+</section>
+<style>
+.swiper-pagination-bullet-active {
+    background: #dc35a9 !important;
+    box-shadow: inset -2px 4px 4px #750747;
+}
+	@media(max-width:900px){
+	.products .swiper-wrapper .swiper-slide .data-product h2::after{
+		margin: 12px auto;
+	}
+	}
+</style>
+<!-- CLIENTES -->
+
+<section class="clientes">
+  <div class="container">
+    <h2 class="title">clientes</h2>
+
+    <div class="all-clients">
+                                  <img width="140" height="132" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%20132'%3E%3C/svg%3E" alt="Cervejaria ambec" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/ambev-scaled.webp" /><noscript><img width="140" height="132" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/ambev-scaled.webp" alt="Cervejaria ambec" /></noscript>
+                            <img width="140" height="60" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2060'%3E%3C/svg%3E" alt="AMPM" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/ampm.webp" /><noscript><img width="140" height="60" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/ampm.webp" alt="AMPM" /></noscript>
+                            <img width="140" height="45" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2045'%3E%3C/svg%3E" alt="brMalls" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/brmalls.webp" /><noscript><img width="140" height="45" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/brmalls.webp" alt="brMalls" /></noscript>
+                            <img width="140" height="71" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2071'%3E%3C/svg%3E" alt="Casa&#038;Construção" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/c_c.webp" /><noscript><img width="140" height="71" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/c_c.webp" alt="Casa&#038;Construção" /></noscript>
+                            <img width="140" height="110" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%20110'%3E%3C/svg%3E" alt="C&#038;A" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/c-e-a-scaled.webp" /><noscript><img width="140" height="110" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/c-e-a-scaled.webp" alt="C&#038;A" /></noscript>
+                            <img width="140" height="62" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2062'%3E%3C/svg%3E" alt="Chevrolet" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/chevrolet-scaled.webp" /><noscript><img width="140" height="62" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/chevrolet-scaled.webp" alt="Chevrolet" /></noscript>
+                            <img width="140" height="40" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2040'%3E%3C/svg%3E" alt="Eletromidia" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/a45fda3a-16b7-44c5-becc-f6be0d2f8e29.webp" /><noscript><img width="140" height="40" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/a45fda3a-16b7-44c5-becc-f6be0d2f8e29.webp" alt="Eletromidia" /></noscript>
+                            <img width="140" height="186" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%20186'%3E%3C/svg%3E" alt="Futuro" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/futuro-scaled.webp" /><noscript><img width="140" height="186" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/futuro-scaled.webp" alt="Futuro" /></noscript>
+                            <img width="140" height="52" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2052'%3E%3C/svg%3E" alt="Grupo Rezek" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/grupo-rezek.webp" /><noscript><img width="140" height="52" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/grupo-rezek.webp" alt="Grupo Rezek" /></noscript>
+                            <img width="140" height="47" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2047'%3E%3C/svg%3E" alt="Habib&#8217;s" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/habibs.webp" /><noscript><img width="140" height="47" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/habibs.webp" alt="Habib&#8217;s" /></noscript>
+                            <img width="140" height="43" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2043'%3E%3C/svg%3E" alt="Ipiranga" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/ipiranga-scaled.webp" /><noscript><img width="140" height="43" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/ipiranga-scaled.webp" alt="Ipiranga" /></noscript>
+                            <img width="140" height="59" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2059'%3E%3C/svg%3E" alt="Kopenhagen" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/kope-logo.webp" /><noscript><img width="140" height="59" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/kope-logo.webp" alt="Kopenhagen" /></noscript>
+                            <img width="140" height="28" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2028'%3E%3C/svg%3E" alt="Le Lis Blanc" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/lelis.webp" /><noscript><img width="140" height="28" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/lelis.webp" alt="Le Lis Blanc" /></noscript>
+                            <img width="140" height="60" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2060'%3E%3C/svg%3E" alt="Kallas" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/logo_cor_kallas-ooh-scaled.webp" /><noscript><img width="140" height="60" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/logo_cor_kallas-ooh-scaled.webp" alt="Kallas" /></noscript>
+                            <img width="140" height="44" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2044'%3E%3C/svg%3E" alt="Total" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/Logo_Total_S.A.webp" /><noscript><img width="140" height="44" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/Logo_Total_S.A.webp" alt="Total" /></noscript>
+                            <img width="140" height="35" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2035'%3E%3C/svg%3E" alt="Iguatemi" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/logo-iguatemi.webp" /><noscript><img width="140" height="35" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/logo-iguatemi.webp" alt="Iguatemi" /></noscript>
+                            <img width="140" height="33" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2033'%3E%3C/svg%3E" alt="Neooh" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/neooh.webp" /><noscript><img width="140" height="33" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/neooh.webp" alt="Neooh" /></noscript>
+                            <img width="140" height="52" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2052'%3E%3C/svg%3E" alt="Outback" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/outback-scaled.webp" /><noscript><img width="140" height="52" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/outback-scaled.webp" alt="Outback" /></noscript>
+                            <img width="140" height="42" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2042'%3E%3C/svg%3E" alt="Porto Seguro" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/porto-seguro-logo-scaled.webp" /><noscript><img width="140" height="42" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/porto-seguro-logo-scaled.webp" alt="Porto Seguro" /></noscript>
+                            <img width="140" height="46" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2046'%3E%3C/svg%3E" alt="Vult" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/logo-1.png" /><noscript><img width="140" height="46" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/logo-1.png" alt="Vult" /></noscript>
+                        </div>
+
+    <div class="swiper cli-mob">
+      <div class="swiper-wrapper">
+
+                              
+            <div class="swiper-slide">
+              <img width="140" height="132" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%20132'%3E%3C/svg%3E" alt="Cervejaria ambec" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/ambev-scaled.webp" /><noscript><img width="140" height="132" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/ambev-scaled.webp" alt="Cervejaria ambec" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="60" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2060'%3E%3C/svg%3E" alt="AMPM" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/ampm.webp" /><noscript><img width="140" height="60" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/ampm.webp" alt="AMPM" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="45" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2045'%3E%3C/svg%3E" alt="brMalls" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/brmalls.webp" /><noscript><img width="140" height="45" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/brmalls.webp" alt="brMalls" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="71" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2071'%3E%3C/svg%3E" alt="Casa&#038;Construção" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/c_c.webp" /><noscript><img width="140" height="71" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/c_c.webp" alt="Casa&#038;Construção" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="110" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%20110'%3E%3C/svg%3E" alt="C&#038;A" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/c-e-a-scaled.webp" /><noscript><img width="140" height="110" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/c-e-a-scaled.webp" alt="C&#038;A" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="62" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2062'%3E%3C/svg%3E" alt="Chevrolet" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/chevrolet-scaled.webp" /><noscript><img width="140" height="62" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/chevrolet-scaled.webp" alt="Chevrolet" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="40" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2040'%3E%3C/svg%3E" alt="Eletromidia" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/a45fda3a-16b7-44c5-becc-f6be0d2f8e29.webp" /><noscript><img width="140" height="40" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/a45fda3a-16b7-44c5-becc-f6be0d2f8e29.webp" alt="Eletromidia" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="186" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%20186'%3E%3C/svg%3E" alt="Futuro" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/futuro-scaled.webp" /><noscript><img width="140" height="186" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/futuro-scaled.webp" alt="Futuro" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="52" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2052'%3E%3C/svg%3E" alt="Grupo Rezek" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/grupo-rezek.webp" /><noscript><img width="140" height="52" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/grupo-rezek.webp" alt="Grupo Rezek" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="47" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2047'%3E%3C/svg%3E" alt="Habib&#8217;s" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/habibs.webp" /><noscript><img width="140" height="47" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/habibs.webp" alt="Habib&#8217;s" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="43" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2043'%3E%3C/svg%3E" alt="Ipiranga" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/ipiranga-scaled.webp" /><noscript><img width="140" height="43" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/ipiranga-scaled.webp" alt="Ipiranga" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="59" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2059'%3E%3C/svg%3E" alt="Kopenhagen" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/kope-logo.webp" /><noscript><img width="140" height="59" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/kope-logo.webp" alt="Kopenhagen" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="28" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2028'%3E%3C/svg%3E" alt="Le Lis Blanc" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/lelis.webp" /><noscript><img width="140" height="28" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/lelis.webp" alt="Le Lis Blanc" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="60" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2060'%3E%3C/svg%3E" alt="Kallas" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/logo_cor_kallas-ooh-scaled.webp" /><noscript><img width="140" height="60" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/logo_cor_kallas-ooh-scaled.webp" alt="Kallas" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="44" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2044'%3E%3C/svg%3E" alt="Total" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/Logo_Total_S.A.webp" /><noscript><img width="140" height="44" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/Logo_Total_S.A.webp" alt="Total" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="35" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2035'%3E%3C/svg%3E" alt="Iguatemi" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/logo-iguatemi.webp" /><noscript><img width="140" height="35" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/logo-iguatemi.webp" alt="Iguatemi" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="33" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2033'%3E%3C/svg%3E" alt="Neooh" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/neooh.webp" /><noscript><img width="140" height="33" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/neooh.webp" alt="Neooh" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="52" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2052'%3E%3C/svg%3E" alt="Outback" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/outback-scaled.webp" /><noscript><img width="140" height="52" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/outback-scaled.webp" alt="Outback" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="42" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2042'%3E%3C/svg%3E" alt="Porto Seguro" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/porto-seguro-logo-scaled.webp" /><noscript><img width="140" height="42" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/porto-seguro-logo-scaled.webp" alt="Porto Seguro" /></noscript>
+            </div>
+
+                      
+            <div class="swiper-slide">
+              <img width="140" height="46" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2046'%3E%3C/svg%3E" alt="Vult" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/logo-1.png" /><noscript><img width="140" height="46" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/logo-1.png" alt="Vult" /></noscript>
+            </div>
+
+                                </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+<!-- DEPOIMENTOS -->
+
+<div class="depositions pd">
+  <div class="container">
+    <div class="swiper depositionSlide">
+      <div class="swiper-wrapper">
+                  
+            
+            <div class="swiper-slide">
+              <img width="338" height="339" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20338%20339'%3E%3C/svg%3E" alt="Mercedes" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/07/Mercedes-Benz-Logo.webp" /><noscript><img width="338" height="339" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/07/Mercedes-Benz-Logo.webp" alt="Mercedes" /></noscript>
+              <blockquote>
+                <p>“As pessoas, hoje, tem o comportamento de compra totalmente diferente.</p>
+<p>5 anos atrás o cliente vinha cinco vezes no show room antes de<br />
+fechar negócio.</p>
+<p>Hoje, ele vem uma vez no showroom.</p>
+<p>A digitalização cumpre o papel de transmitir mais informações num período curto e de forma mais concentrada.”</p>
+<p>&nbsp;</p>
+
+                <span class="nome">ROBERTO GASPARETI</span>
+                <legend>Gerente Sênior de Desenvolvimento Mercedes Benz</legend>
+              </blockquote>
+            </div>
+                                </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+<!-- MÍDIA -->
+<section class="container midia">
+  <h2 class="title">na mídia</h2>
+
+  <ul class="articles">
+
+          	  
+	  	  
+        <li>
+            <a href="https://theled.com.br/retail-media-in-store-tudo-o-que-voce-precisa-saber/">
+          <img width="1200" height="630" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20630'%3E%3C/svg%3E" alt=" RETAIL MEDIA IN-STORE: TUDO O QUE VOCÊ PRECISA SABER " data-lazy-src="https://theled.com.br/wp-content/uploads/2024/07/sephora.png" /><noscript><img width="1200" height="630" loading="lazy" src="https://theled.com.br/wp-content/uploads/2024/07/sephora.png" alt=" RETAIL MEDIA IN-STORE: TUDO O QUE VOCÊ PRECISA SABER " /></noscript></a>
+          
+<a href="https://theled.com.br/retail-media-in-store-tudo-o-que-voce-precisa-saber/" class="tiulo_noticia">
+                  RETAIL MEDIA IN-STORE: TUDO O QUE VOCÊ PRECISA SABER                 </a>
+          <a href="https://theled.com.br/retail-media-in-store-tudo-o-que-voce-precisa-saber/" class="btn">ler mais</a>
+        </li>
+	  
+	  			      	  
+	  	  
+        <li>
+            <a href="https://theled.com.br/estande-de-evento/">
+          <img width="1200" height="630" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20630'%3E%3C/svg%3E" alt=" COMO CRIAR UM ESTANDE DE EVENTO: DICAS ESSENCIAIS PARA SE DESTACAR E ATRAIR MAIS VISITANTES " data-lazy-src="https://theled.com.br/wp-content/uploads/2024/07/estande-de-evento-multiplan.png" /><noscript><img width="1200" height="630" loading="lazy" src="https://theled.com.br/wp-content/uploads/2024/07/estande-de-evento-multiplan.png" alt=" COMO CRIAR UM ESTANDE DE EVENTO: DICAS ESSENCIAIS PARA SE DESTACAR E ATRAIR MAIS VISITANTES " /></noscript></a>
+          
+<a href="https://theled.com.br/estande-de-evento/" class="tiulo_noticia">
+                  COMO CRIAR UM ESTANDE DE EVENTO: DICAS ESSENCIAIS PARA SE DESTACAR E ATRAIR MAIS VISITANTES                 </a>
+          <a href="https://theled.com.br/estande-de-evento/" class="btn">ler mais</a>
+        </li>
+	  
+	  			      	  
+	  	  
+        <li>
+            <a href="https://theled.com.br/circuito-de-midia/">
+          <img width="1200" height="630" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20630'%3E%3C/svg%3E" alt=" VANTAGENS DOS DISPLAYS DE LED NO CIRCUITO DE MÍDIA EM EVENTOS" data-lazy-src="https://theled.com.br/wp-content/uploads/2024/06/1.png" /><noscript><img width="1200" height="630" loading="lazy" src="https://theled.com.br/wp-content/uploads/2024/06/1.png" alt=" VANTAGENS DOS DISPLAYS DE LED NO CIRCUITO DE MÍDIA EM EVENTOS" /></noscript></a>
+          
+<a href="https://theled.com.br/circuito-de-midia/" class="tiulo_noticia">
+                  VANTAGENS DOS DISPLAYS DE LED NO CIRCUITO DE MÍDIA EM EVENTOS                </a>
+          <a href="https://theled.com.br/circuito-de-midia/" class="btn">ler mais</a>
+        </li>
+	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			      	  
+	  			              
+  </ul>
+
+  <img width="387" height="4" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20387%204'%3E%3C/svg%3E" alt="linhe" class="line_" data-lazy-src="https://theled.com.br/wp-content/themes/theled/assets/img/line.webp" /><noscript><img width="387" height="4" loading="lazy" src="https://theled.com.br/wp-content/themes/theled/assets/img/line.webp" alt="linhe" class="line_" /></noscript>
+</section>
+
+	
+   <script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://theled.com.br/wp-content/cache/min/1/wp-content/themes/theled/assets/js/swipper.js?ver=1747884076" defer></script>
+  
+
+    <script type="rocketlazyloadscript">
+      function loadcss() {
+        var addStylesheet = function (href) {
+          var link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = href;
+          document.head.appendChild(link);
+        };
+
+        var addScript = function (src, type, nomodule = false) {
+          var script = document.createElement("script");
+          script.src = src;
+          script.type = type;
+          if (nomodule) script.noModule = true;
+          document.body.appendChild(script);
+        };
+
+        document.addEventListener("DOMContentLoaded", function () {
+          addStylesheet("https://theled.com.br/wp-content/themes/theled/assets/css/swipper.css");
+          addStylesheet("https://theled.com.br/wp-content/themes/theled/assets/css/style.css");
+          addScript("https://theled.com.br/wp-content/themes/theled/assets/js/swipper.js", "text/javascript");
+          addScript("https://theled.com.br/wp-content/themes/theled/assets/js/home.js", "text/javascript");
+//           addScript("https://theled.com.br/wp-content/themes/theled/assets/js/main.js", "text/javascript");
+        });
+      }
+
+      loadcss();
+		
+ 
+    </script>
+	
+  
+<style>
+  .contatos {
+    align-self: baseline;
+  }
+
+  footer .container .redes-sociais .sociais_ li a img {
+    width: 48px !important;
+  }
+
+  footer .container .linksfooter a,
+  .contatos a {
+    padding: 5px 10px
+  }
+</style>
+
+<footer>
+  <ul class="container">
+    <li class="redes-sociais">
+      <img width="388" height="99" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20388%2099'%3E%3C/svg%3E" alt="The Led" data-lazy-src="https://theled.com.br/wp-content/uploads/2023/08/logofoorer.webp" /><noscript><img width="388" height="99" loading="lazy" src="https://theled.com.br/wp-content/uploads/2023/08/logofoorer.webp" alt="The Led" /></noscript>
+
+      <ul class="sociais_">
+        <li>
+          <a target="_blank" href="https://br.pinterest.com/theledoficial/"><img width="40" height="40" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" alt="pinterest" data-lazy-src="https://theled.com.br/wp-content/themes/theled/assets/img/pinterest.webp" /><noscript><img width="40" height="40" loading="lazy" src="https://theled.com.br/wp-content/themes/theled/assets/img/pinterest.webp" alt="pinterest" /></noscript></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.facebook.com/theledoficial/"><img width="40" height="40" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" alt="facebook" data-lazy-src="https://theled.com.br/wp-content/themes/theled/assets/img/facebook.webp" /><noscript><img width="40" height="40" loading="lazy" src="https://theled.com.br/wp-content/themes/theled/assets/img/facebook.webp" alt="facebook" /></noscript></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.instagram.com/theledoficial/"><img width="40" height="40" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" alt="instagram" data-lazy-src="https://theled.com.br/wp-content/themes/theled/assets/img/instagram.webp" /><noscript><img width="40" height="40" loading="lazy" src="https://theled.com.br/wp-content/themes/theled/assets/img/instagram.webp" alt="instagram" /></noscript></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/company/29016861/"><img width="40" height="40" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" alt="linkedin" data-lazy-src="https://theled.com.br/wp-content/themes/theled/assets/img/linkedin.webp" /><noscript><img width="40" height="40" loading="lazy" src="https://theled.com.br/wp-content/themes/theled/assets/img/linkedin.webp" alt="linkedin" /></noscript></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.youtube.com/@theled8801/"><img width="40" height="40" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" alt="pinterest" data-lazy-src="https://theled.com.br/wp-content/themes/theled/assets/img/youtube.webp" /><noscript><img width="40" height="40" loading="lazy" src="https://theled.com.br/wp-content/themes/theled/assets/img/youtube.webp" alt="pinterest" /></noscript></a>
+        </li>
+      </ul>
+    </li>
+    <li class="contatos">
+      <a target="_blank" href="https://wa.me/5511940559855" class="whs">
+        <img width="28" height="27" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2028%2027'%3E%3C/svg%3E" alt="whatsapp" data-lazy-src="https://theled.com.br/wp-content/themes/theled/assets/img/whats.webp" /><noscript><img width="28" height="27" loading="lazy" src="https://theled.com.br/wp-content/themes/theled/assets/img/whats.webp" alt="whatsapp" /></noscript>
+        +55 (11) 94055-9855</a>
+
+      <a target="_blank" href="tel:+551126049090" class="whs" title="Nosso número de telefone" aria-label="Ligue para nós no número">
+        <img width="30" height="30" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2030'%3E%3C/svg%3E" alt="Telefone" data-lazy-src="https://theled.com.br/wp-content/uploads/2024/02/1126049090.webp" /><noscript><img width="30" height="30" loading="lazy" src="https://theled.com.br/wp-content/uploads/2024/02/1126049090.webp" alt="Telefone" /></noscript>
+        +55 (11) 2604-9090 </a>
+
+      <a target="_blank" href="tel:+5511966011691" class="whs" title="Nosso número de telefone" aria-label="Ligue para nós no número">
+        <img width="30" height="30" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2030'%3E%3C/svg%3E" alt="Telefone manutenção" data-lazy-src="https://theled.com.br/wp-content/uploads/2024/02/11966011691.webp" /><noscript><img width="30" height="30" loading="lazy" src="https://theled.com.br/wp-content/uploads/2024/02/11966011691.webp" alt="Telefone manutenção" /></noscript>
+        +55 (11) 96601-1691</a>
+
+      <a target="_blank" href="mailto:comercial@theled.com.br">comercial@theled.com.br</a>
+    </li>
+    <li class="linksfooter">
+
+      <a href="https://theled.com.br/" aria-current="page">Home</a><a href="https://theled.com.br/a-empresa/">A Empresa</a><a href="https://theled.com.br/cases/">Cases</a><a href="https://theled.com.br/produtos/">Produtos</a><a href="https://theled.com.br/servicos/">Serviços</a><a href="https://theled.com.br/blog/">Blog</a><a href="https://theled.com.br/the-room/">NÚCLEO DE CRIAÇÃO</a><a href="https://theled.com.br/fale-conosco/">Fale Conosco</a>    </li>
+  </ul>
+  <span class="copy">
+    Somos a maior empresa em Soluções com Painéis de LED. Oferecemos pacotes
+    completos de serviços para comunicação visual e publicidade e
+    residenciais. Todos os direitos reservados. THELED 2023.
+  </span>
+</footer>
+
+
+<script type="rocketlazyloadscript">
+  function loadcss() {
+    var addStylesheet = function (href) {
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = href;
+      document.head.appendChild(link);
+    };
+
+    var addScript = function (src, type, nomodule = false) {
+      var script = document.createElement("script");
+      script.src = src;
+      script.type = type;
+      if (nomodule) script.noModule = true;
+      document.body.appendChild(script);
+    };
+
+
+  }
+
+  loadcss();
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" async data-rocket-src="https://theled.com.br/wp-content/cache/min/1/js/loader-scripts/07df1cb6-4eea-4b30-887b-8874f9e8aaeb-loader.js?ver=1747884076"></script>
+<!-- Inicio Wordpress Footer -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/theled\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/theled.com.br","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://theled.com.br/wp-content/cache/min/1/wp-content/themes/theled/assets/js/swipper.js?ver=1747884076" id="swipper-js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://theled.com.br/wp-content/cache/min/1/wp-content/themes/theled/assets/js/main.js?ver=1747884076" id="main-js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://theled.com.br/wp-content/cache/min/1/wp-content/themes/theled/assets/js/products.js?ver=1747884076" id="products-js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://theled.com.br/wp-content/cache/min/1/wp-content/themes/theled/assets/js/home.js?ver=1747884105" id="home-js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://theled.com.br/wp-content/cache/min/1/js/loader-scripts/07df1cb6-4eea-4b30-887b-8874f9e8aaeb-loader.js?ver=1747884076" id="tracking-code-script-88e7012085105f9f2169d4c8e59e3d4a-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
+(function() {
+				var expirationDate = new Date();
+				expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
+				document.cookie = "pll_language=pt; expires=" + expirationDate.toUTCString() + "; path=/; secure; SameSite=Lax";
+			}());
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="slb_context">window.addEventListener('DOMContentLoaded', function() {/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB ) { {$.extend(SLB, {"context":["public","user_guest"]});} }})})(jQuery);}/* ]]> */});</script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://theled.com.br/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><!-- Final Wordpress Footer -->
+
+<!-- Inicio Script do RD Station Form Popup -->
+<style>
+  div#formulario-de-whatsapp-bffed41b606f6399a3d9 {
+    display: none;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: rgba(0, 0, 0, .75);
+    top: 0;
+  }
+
+  #form-formulario-de-whatsapp-bffed41b606f6399a3d9 {
+    width: 600px;
+    margin: 0 20px;
+  }
+</style>
+<div role="main" style="display:none" id="formulario-de-whatsapp-bffed41b606f6399a3d9"></div>
+<script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript"> new RDStationForms('formulario-de-whatsapp-bffed41b606f6399a3d9', 'UA-148889648-47').createForm();
+</script>
+
+<script type="rocketlazyloadscript">
+  setTimeout(() => {
+    const whatsAppLink = document.querySelectorAll('a[href*="5511940559855"]');
+    const popupParent = document.querySelector("#formulario-de-whatsapp-bffed41b606f6399a3d9");
+    const popupForm = document.querySelector("#form-formulario-de-whatsapp-bffed41b606f6399a3d9");
+
+    const togglePopup = (e) => {
+      console.dir(whatsAppLink);
+      for (let i = 0; i < whatsAppLink.length; i++) {
+        if (whatsAppLink[i] === e.target) {
+          e.preventDefault();
+          popupParent.style.display = "flex";
+          console.log("a");
+          return;
+        }
+        console.log(popupForm);
+        if (!popupForm.contains(e.target) && whatsAppLink[i] !== e.target) {
+          popupParent.style.display = "none";
+        }
+      }
+    };
+
+    document.addEventListener("click", togglePopup);
+    document.addEventListener("touchend", togglePopup);
+
+  }, 1000);
+</script>
+
+</body>
+
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1747884105 -->

@@ -1,0 +1,38 @@
+<title>Phibo: Sistema Para Loja De Roupas e Moda em Geral - Phibo</title>
+<meta name="description" content="O Phibo é um sistema para loja de roupas e moda em geral. Fácil de usar, 100% online e com suporte por WhatsApp. Teste grátis por 14 dias!">
+<h1>Conheça o Phibo!</h1>
+<h2>O Phibo é um Sistema de Gestão específico para lojas de moda!</h2>
+<h3>Roupas</h3>
+<h3>Calçados</h3>
+<h3>Acessórios</h3>
+<h2>Facilite todas suas rotinas da loja, ganhe tempo e venda mais!</h2>
+<h3>Gestão de Estoque</h3>
+<h3>Gestão Financeira</h3>
+<h3>Controle de Vendas</h3>
+<h3>Clientes e Fidelização</h3>
+<h3>Emissão de notas fiscais</h3>
+<h3>Integração e-Commerce</h3>
+<h3>Específico</h3>
+<h3>Fácil de Usar</h3>
+<h3>100% Online</h3>
+<h3>Suporte Por WhatsApp</h3>
+<h2>Grandes especialistas em varejo do Brasil recomendam Phibo!</h2>
+<h3>A Phibo é avaliada como "Excelente" no Google</h3>
+<h2>Veja Como o Phibo Simplifica a Gestão Da Sua Loja</h2>
+<h2>Gestão Fácil De Estoque E Impressão De Etiquetas</h2>
+<h2>Gestão Financeira Completa E Crediário</h2>
+<h2>Vendas, Frente de Caixa E Notas Fiscais Automáticas</h2>
+<h2>Controle De Bags Delivery E Vendas Consignadas</h2>
+<h2>Cadastro Ágil De Clientes, Integração Com Whatsapp E Cartão Fidelidade</h2>
+<h2>Integração Com Plataforma e-Commerces de Forma Fácil e Rápida</h2>
+<h3>Com o Phibo você pode integrar sua loja física e online com poucos cliques, e ter tudo sincronizado.</h3>
+<h2>Veja o que dizem nossos mais de 8 mil clientes:</h2>
+<h2>Planos e Preços</h2>
+<h3>Bronze</h3>
+<h3>Prata</h3>
+<h3>Ouro</h3>
+<h2>Garantia: O Dobro Ou Nada.</h2>
+<h2>Perguntas Frequentes</h2>
+<h3>AJUDA E SUPORTE</h3>
+<h3>Suporte</h3>
+<h3>Funcionalidades</h3>

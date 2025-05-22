@@ -1,0 +1,21 @@
+<title>UniBTA - Faculdade em São Paulo</title>
+<meta name="description" content="Cursos UniBTA com qualidade e flexibilidade, para profissionais que buscam crescimento e inovação em São Paulo.">
+<h1>Em duvida de que curso fazer?</h1>
+<h1>Faça nosso teste de carreiras</h1>
+<h3>Como você deseja iniciar?</h3>
+<h3>Faça a prova ​online</h3>
+<h3>Sua nota ​do Enem vale ​desconto</h3>
+<h3>Escolha uma ​nova ​oportunidade</h3>
+<h3>Elimine as ​matérias</h3>
+<h3>Por que escolher o UniBTA?</h3>
+<h3>Programas e Bolsas de Estudo</h3>
+<h2>Fácil acesso</h2>
+<h3>Notícias e Eventos</h3>
+<h3>Tendências no Mercado de Trabalho: Se Prepare para o Futuro!</h3>
+<h3>O Futuro do Trabalho na Era Digital: Conheça as Mudanças</h3>
+<h3>Melhor Profissão para o Futuro: Escolhendo a Carreira Certa</h3>
+<h3>MBA em Gestão de Investimentos: Alavancando sua Carreira!</h3>
+<h3>O que nossos alunos dizem</h3>
+<h3>Siga nosso Instagram</h3>
+<h3>VEM TRANSFORMARSEU FUTURO COM A GENTE!</h3>
+<h1>INSTITUCIONAL</h1>

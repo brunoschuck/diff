@@ -1,0 +1,28 @@
+<title>Terapia em Grupo Online - Instituto Bellina</title>
+<meta name="description" content="Oferecemos terapia de grupo online, focado em temas específicos, para aqueles que buscam cuidar e investir na própria saúde mental.">
+<h1>Conquiste sua melhor versão.</h1>
+<h3>Solucione aquilo que te
+atrapalha...</h3>
+<h3>Ansiedade</h3>
+<h3>Depressão</h3>
+<h3>Burnout/ Síndrome de Esgotamento Profissional</h3>
+<h3>Autoconhecimento e Empoderamento pessoal</h3>
+<h3>Perfeccionismo</h3>
+<h3>Envelhecimento saudável</h3>
+<h3>Luto ou perdas</h3>
+<h3>Fim de relacionamentos</h3>
+<h3>Medo de dirigir</h3>
+<h2>Como funciona nossa terapia.</h2>
+<h3>Vantagens da terapia de grupo.</h3>
+<h3>Apoio social</h3>
+<h3>Criar expectativa positiva</h3>
+<h3>Diferentes perspectivas</h3>
+<h3>Responsabilidade pessoal</h3>
+<h3>Confiança</h3>
+<h3>Autodescoberta</h3>
+<h3>Por que escolher o Instituto Bellina?</h3>
+<h3>Econômico</h3>
+<h3>Focado</h3>
+<h3>Eficiente</h3>
+<h3>Rápido</h3>
+<h3>Perguntas frequentes.</h3>

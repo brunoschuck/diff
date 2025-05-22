@@ -1,0 +1,43 @@
+<title>Instituto CDT - Pós-Graduação Em Medicina</title>
+<meta name="description" content="Nossas pós-graduações em medicina trazem os principais avanços na área a partir de uma metodologia exclusiva focada na prática.">
+<h2>Método Dr. Thiago Amorim</h2>
+<h2>Método Dr. Thiago Amorim</h2>
+<h3>+ de 21.000</h3>
+<h3>7 Pós-Graduações</h3>
+<h3>Imersões</h3>
+<h2>Os pilares do Instituto CDT</h2>
+<h2>Pós-Graduações</h2>
+<h3>Impulsione sua carreira médica!</h3>
+<h2>Medicina de Emergência</h2>
+<h2>Emergências Pediátricas e Neonatais</h2>
+<h2>Medicina Intensiva</h2>
+<h2>Medicina da Dor</h2>
+<h2>Nutrologia</h2>
+<h2>Psiquiatria</h2>
+<h2>Endocrinologia</h2>
+<h2>Imersões</h2>
+<h3>Capacitação de alto nível!</h3>
+<h2>Via Aérea Avançada com Cadáveres Frescos</h2>
+<h2>Acesso Venoso Central em Cadáveres</h2>
+<h2>Cursos Livres</h2>
+<h3>Evolução médica constante!</h3>
+<h2>Intubação Orotraqueal Pediátrica</h2>
+<h2>Aperfeiçoamento Intubação Orotraqueal</h2>
+<h2>Ventilação Mecânica do Básico ao Avançado</h2>
+<h2>Guia de Punções</h2>
+<h2>Livros</h2>
+<h3>Conhecimento prático sempre com você!</h3>
+<h2>Manual Prático de Ventilação Mecânica</h2>
+<h2>Manual Prático de Ventilação Mecânica</h2>
+<h2>Manual Prático de Sedação Avançada</h2>
+<h2>Manual Prático de Sedação Avançada</h2>
+<h2>Manual Prático de Intubação Orotraqueal</h2>
+<h2>Manual Prático de Intubação Orotraqueal</h2>
+<h2>A Bíblia do ECG</h2>
+<h2>A Bíblia do ECG</h2>
+<h2>Manual Prático de Agentes Vasoativos</h2>
+<h2>Manual Prático de Agentes Vasoativos</h2>
+<h2>Manual Prático de Procedimentos Médicos</h2>
+<h2>Manual Prático de Procedimentos Médicos</h2>
+<h2>Últimos posts do Blog</h2>
+<h2>Instituto CDT de Desenvolvimento em Ciências Médicas LTDA</h2>

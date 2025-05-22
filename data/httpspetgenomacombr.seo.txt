@@ -1,0 +1,56 @@
+<title>Petgenoma</title>
+<meta name="description" content="Com a maior base de cães no Brasil, a petgenoma consegue detectar características e doenças genéticas que são fundamentais para cuidar da saúde do seu cão. Identificar sua composição racial e entender melhor seus comportamentos.">
+<h1>Teste de DNA que ajuda seu Pet a viver mais e melhor!</h1>
+<h2>Descubra a verdadeira composição racial do seu Pet</h2>
+<h2>Seu Pet mais saudável! Como a genética pode ajudar?</h2>
+<h2>Somos pioneiros em genética para cães na América Latina</h2>
+<h2>Fazemos os melhores testes genéticos em cães no país</h2>
+<h3>Identificação de raças</h3>
+<h3>Consanguinidade</h3>
+<h3>Saúde</h3>
+<h3>Características</h3>
+<h2>Pets merecem um novo nível de cuidado</h2>
+<h2>Conheça nossos produtos</h2>
+<h3>Premium</h3>
+<h3>Identificação de raças</h3>
+<h2>Conheça um pouco mais sobre o resultado que você receberá ao se tornar um cliente petgenoma</h2>
+<h2>Conheça a Nossa Jornada</h2>
+<h3>1
+                    Compra</h3>
+<h3>2
+                    Coleta, registro e devolução</h3>
+<h3>3
+                    Análise científica</h3>
+<h3>4
+                    Resultado e detalhamento</h3>
+<h2>Nossos clientes apaixonados</h2>
+<h2>Líderes em genética canina</h2>
+<h2>A petgenoma é importante para você e para o seu Pet!</h2>
+<h3>Veja o que os especialistas falam:</h3>
+<h2>Somos
+                            amantes dos animais!</h2>
+<h3>Fabiana de Andrade</h3>
+<h3>Douglas</h3>
+<h3>Paula Rohr</h3>
+<h3>Eduardo Lemos</h3>
+<h3>Darilene Ursula Tyska</h3>
+<h2>Conheça nossas redes sociais</h2>
+<h2>FAQ</h2>
+<h2>Contato</h2>
+<h1>Relação de raças</h1>
+<h3>Nome da raça</h3>
+<h3>Tamanho do cachorro</h3>
+<h2>Mini</h2>
+<h2>Pequeno</h2>
+<h2>Médio</h2>
+<h2>Grande</h2>
+<h2>Gigante</h2>
+<h3>Áreas sem pigmento</h3>
+<h3>Modificadores de tonalidade</h3>
+<h3>Outras características físicas</h3>
+<h3>Cor de base da pelagem</h3>
+<h3>Saiba mais</h3>
+<h3>Nossos contatos</h3>
+<h3>Horário de atendimento</h3>
+<h3>Acompanhe nossas redes sociais</h3>
+<h3>Nossa sede</h3>

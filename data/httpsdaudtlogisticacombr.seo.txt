@@ -1,0 +1,40 @@
+<title>Daudt - Empresa De Logísitca</title>
+<meta name="description" content="Com a Daudt Logística, viabilizamos a chegada de produtos com integridade e rapidez a todos pontos de venda de nosso cliente.">
+<h2>Segurança e eficiência</h2>
+<h3>em operações logísticas</h3>
+<h2>Segurança e eficiência</h2>
+<h3>em operações logísticas</h3>
+<h2>Segurança e eficiência</h2>
+<h3>em operações logísticas</h3>
+<h2>MELHORES EMPRESAS</h2>
+<h3>IDENTIDADE</h3>
+<h3>SATISFAÇÃO/MOTIVAÇÃO</h3>
+<h3>LIDERANÇA</h3>
+<h3>APRENDIZADO/DESENVOLVIMENTO</h3>
+<h2>DAUDT LOGÍSTICA</h2>
+<h3>NEGÓCIO</h3>
+<h3>MISSÃO</h3>
+<h3>VISÃO</h3>
+<h3>META</h3>
+<h3>MEIO AMBIENTE</h3>
+<h2>Pilares da Daudt Logística</h2>
+<h3>COMPETÊNCIA</h3>
+<h3>COMPROMETIMENTO</h3>
+<h3>DISCIPLINA</h3>
+<h3>REPRESENTATIVIDADE</h3>
+<h3>COMUNICAÇÃO</h3>
+<h3>PACIÊNCIA</h3>
+<h2>LOCALIZAÇÃO</h2>
+<h3>ADMINISTRAÇÃO</h3>
+<h3>CENTRO DE DISTRIBUIÇÃO RS</h3>
+<h3>CENTRO DE DISTRIBUIÇÃO SP</h3>
+<h3>CENTRO DE DISTRIBUIÇÃO PR</h3>
+<h2>CONTATO</h2>
+<h3>Fale com a Daudt se tiver qualquer dúvida relacionada aos nossos serviços.</h3>
+<h2>TRABALHE CONOSCO</h2>
+<h3>Quer trabalhar na
+            Daudt Logística?
+            Preencha o seu
+            currículo.</h3>
+<h3>MENU</h3>
+<h3>MAIS INFORMAÇÕES</h3>

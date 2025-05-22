@@ -1,0 +1,46 @@
+<title>Solução ERP para Grandes e Médias Empresas | MXM Sistemas</title>
+<meta name="description" content="O Sistema ERP para médias e grandes empresas, com operações complexas e alto nível de compliance. Solução SaaS, web e muito mais. Conheça a MXM!">
+<h1>Soluções MXM para Gestão</h1>
+<h2>Parceiros de soluções do segmento</h2>
+<h2>Clientes</h2>
+<h2>Vantagens e diferenciais do ERP MXM-WebManager</h2>
+<h3>100% SaaS, sem necessidade de servidores próprios</h3>
+<h3>Muitos ainda oferecem modelos híbridos com instalações locais, aumentando custos e complexidade</h3>
+<h3>Atualizações automáticas e sem custos extras</h3>
+<h3>Cobram por atualizações ou exigem migrações que podem custar até 30% do valor da implantação</h3>
+<h3>Suporte técnico especializado e próximo do cliente</h3>
+<h3>Atendimento robotizado ou suporte terceirizado, com baixa proximidade com o cliente</h3>
+<h3>Implantação ágil, sem necessidade de programação</h3>
+<h3>Implantação lenta, com alto nível de customização que encarece e estende o projeto</h3>
+<h3>Solução fiscal e regulatória integrada sem custos adicionais</h3>
+<h3>Demandam módulos pagos ou integração com terceiros para atender exigências fiscais</h3>
+<h3>Interface web intuitiva e responsiva</h3>
+<h3>Sistemas complexos e pouco intuitivos, exigindo treinamentos longos para operação eficiente</h3>
+<h3>Todos os módulos estão integrados de maneira nativa e se comunicam online entre si</h3>
+<h3>Sistemas que não se interagem e cuja comunicação acontece por meio de processamentos em lotes</h3>
+<h3>Licenciamento transparente e sem custos ocultos</h3>
+<h3>Modelos confusos, com cobranças inesperadas durante o projeto</h3>
+<h3>Arquitetura aberta com integração fácil via API</h3>
+<h3>Integrações limitadas ou bloqueadas, exigindo projetos adicionais e customizações caras</h3>
+<h3>Alta performance para empresas de médio e grande porte</h3>
+<h3>Necessitam de altos investimentos para manter a eficiência operacional</h3>
+<h2>Vantagens do ERP MXM-WebManager</h2>
+<h3>100% Web e na Nuvem</h3>
+<h3>Usabilidade</h3>
+<h3>Atualização de Versões</h3>
+<h3>Implantação Revolucionária</h3>
+<h3>Credibilidade e Qualidade</h3>
+<h2>Segmentos</h2>
+<h2>Depoimentos</h2>
+<h2>Blog</h2>
+<h1>Planejamento contábil: sua importância e as melhores práticas</h1>
+<h1>Reforma Tributária: Quando o IBS e a CBS não são cobrados?</h1>
+<h1>Como a MXM está atualizando o ERP MXM-WebManager para atender à Reforma Tributária</h1>
+<h3>Converse
+com nossos
+especialistas</h3>
+<h2>Sobre nós</h2>
+<h2>MXM-WebManager</h2>
+<h2>Segmentos</h2>
+<h2>Fale Conosco</h2>
+<h2>Login</h2>

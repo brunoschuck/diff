@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto CDT - Pós-Graduação Em Medicina</title>
+  <meta name="description" content="Nossas pós-graduações em medicina trazem os principais avanços na área a partir de uma metodologia exclusiva focada na prática." />
+  <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+  <link rel="canonical" href="https://institutocdt.com.br/" />
+  <meta name="theme-color" content="#010115" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#010115" />
+  <meta name="apple-mobile-web-app-title" content="Instituto CDT - Pós-Graduação Em Medicina" />
+  <meta name="msapplication-TileImage" content="assets/img/favicon.webp" />
+  <meta name="msapplication-TileColor" content="#010115" />
+  <link href="assets/img/favicon.webp" rel="shortcut icon" />
+  <link href="assets/img/favicon.webp" rel="apple-touch-icon" sizes="144x144" />
+  <meta name="description" content="Nossas pós-graduações em medicina trazem os principais avanços na área a partir de uma metodologia exclusiva focada na prática." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Instituto CDT - Pós-Graduação Em Medicina" />
+  <meta property="og:title" content="Instituto CDT - Pós-Graduação Em Medicina" />
+  <meta property="og:description" content="Nossas pós-graduações em medicina trazem os principais avanços na área a partir de uma metodologia exclusiva focada na prática." />
+  <meta property="og:image" content="https://institutocdt.com.br/assets/img/logo_azul_w.webp" />
+  <style>
+    ::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px #e6e6e6;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #76A3FF;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #4DC6FF;
+    }
+
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    @font-face {
+      font-family: 'Sora';
+      src: url('assets/fonts/Sora/Sora-Regular.woff2') format('woff2'),
+        url('assets/fonts/Sora/Sora-Regular.woff') format('woff'),
+        url('assets/fonts/Sora/Sora-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Sora';
+      src: url('assets/fonts/Sora/Sora-SemiBold.woff2') format('woff2'),
+        url('assets/fonts/Sora/Sora-SemiBold.woff') format('woff'),
+        url('assets/fonts/Sora/Sora-SemiBold.ttf') format('truetype');
+      font-weight: 600;
+      font-display: swap;
+    }
+
+    html {
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      max-width: 100%;
+      font-family: "Sora", sans-serif;
+      background-color: #000B1C;
+      color: #eeeeee;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    section,
+    header,
+    footer {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      position: relative;
+      width: 1280px;
+      max-width: 100%;
+    }
+
+    .row,
+    .row2 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .col {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .d-none {
+      display: none !important;
+    }
+
+    .col-left,
+    .col-right {
+      width: 50%;
+      max-width: 100%;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    button {
+      border: 0;
+    }
+
+    b {
+      font-weight: 600;
+    }
+
+    a {
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    a:hover {
+      transform: scale(1.03);
+    }
+
+    .hero {
+      padding: 0 0 140px 0;
+      min-height: 850px;
+      justify-content: end;
+      background-image: url(assets/img/bg-01-desktop.webp);
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 25px 0;
+    }
+
+    header .col {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .site_selo_tha {
+      border-radius: 8px;
+    }
+
+    .menu ul {
+      display: flex;
+      list-style: none;
+      gap: 2vw;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu a,
+    .menu span {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: none;
+    }
+
+    .menu li {
+      transition: 0.3s ease;
+    }
+
+    .menu li:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu .botao,
+    .menu .contato {
+      padding: 12px 20px;
+      background-image: linear-gradient(90deg, #2F74FF, #60A5FF, #60A5FF, #2F74FF);
+      border-radius: 5px;
+      font-weight: 700;
+    }
+
+    #whatsapp {
+      position: relative;
+      cursor: pointer;
+      padding: 12px 20px;
+      background-image: linear-gradient(to right, #162EFF, #040C52);
+      color: white;
+      border-radius: 5px;
+      font-weight: 700;
+      text-align: center;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    #whatsapp:hover {
+      background-image: linear-gradient(to right, #38EF7D, #11998E);
+    }
+
+    #whatsapp ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      list-style: none;
+      padding-inline-start: 0;
+      border-radius: 5px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #whatsapp .chevron {
+      transition: transform 0.3s ease;
+      font-size: 14px;
+    }
+
+    #whatsapp.open .chevron {
+      transform: rotate(-540deg);
+    }
+
+    #whatsapp ul li {
+      width: 175px;
+      max-width: 100%;
+      padding: 10px;
+      background-image: linear-gradient(to right, #162EFF, #040C52);
+      border-radius: 5px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    #whatsapp ul li:hover {
+      background-image: linear-gradient(to right, #38EF7D, #11998E);
+    }
+
+    #whatsapp ul li:first-child {
+      margin: 5px 0;
+    }
+
+    #whatsapp a {
+      font-size: 15px;
+    }
+
+    .hero .row_hr {
+      gap: 2.3%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero .col-left {
+      width: 41%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .hero .col-right {
+      width: 58%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .hr_content {
+      padding: 30px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(4.9765625px);
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 0) {
+      .hr_content:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 1px;
+        border-radius: 10px;
+        background: linear-gradient(270deg, #0F1B3800 0%, rgba(41, 77, 158, 0.5) 27%, rgba(206, 221, 255, 0.5) 100%);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: destination-out;
+        z-index: -1;
+      }
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      font-weight: 600;
+    }
+
+    .hero h2 span {
+      background: linear-gradient(90deg, #4DC6FF, #76A3FF);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 1.4em;
+      font-weight: 400;
+      color: #A3B0C0;
+    }
+
+    .hero p b {
+      color: #ffffff;
+    }
+
+    .metodo_thiago {
+      position: relative;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
+
+    .destaques_cdt {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      padding: 18px;
+      background-color: rgba(255, 255, 255, 0.20);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(202, 213, 225, 0.15);
+      border-radius: 5px;
+      gap: 5px;
+    }
+
+    .txt1 {
+      top: 10%;
+      left: 1%;
+    }
+
+    .txt2 {
+      bottom: 7%;
+      left: 7%;
+    }
+
+    .txt3 {
+      bottom: 17%;
+      right: -7%;
+    }
+
+    .destaques_cdt div {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .destaques_cdt h3 {
+      font-size: 16px;
+      font-weight: 400;
+      text-shadow: 1px 1px 1px #000000;
+    }
+
+    .txt1 h4 {
+      font-size: 10px;
+      font-weight: 400;
+      text-shadow: 1px 1px 1px #000000;
+    }
+
+    .txt2 h4 {
+      font-size: 14px;
+      font-weight: 400;
+      text-shadow: 1px 1px 1px #000000;
+    }
+
+    .txt3 h4 {
+      font-size: 13px;
+      font-weight: 400;
+      text-shadow: 1px 1px 1px #000000;
+    }
+
+    .letreiro {
+      position: relative;
+      display: grid;
+    }
+
+    .ajp-marquee {
+      position: relative;
+      max-width: 100%;
+      margin: 0 auto;
+      white-space: nowrap;
+      overflow-x: hidden;
+      display: inline-table;
+      padding: 5px 0;
+      background: linear-gradient(to right, #1E2F57, #0F1B37);
+      transition: 0s;
+    }
+
+    .ajp-marquee p {
+      display: inline-flex;
+      align-items: center;
+      max-width: 100%;
+      font-size: 14px;
+      letter-spacing: 0.18em;
+      color: #ffffff;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      animation: marquee 10s linear infinite;
+    }
+
+    .ajp-marquee p span {
+      display: inline-block;
+      margin: 0 15px;
+      width: 50px;
+      height: 50px;
+      background-image: url(assets/img/logo_cdt.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 996px) {
+      header {
+        position: relative;
+      }
+
+      .metodo_thiago,
+      .metodo_thiago img {
+        width: 100%;
+      }
+
+      .about {
+        padding: 20px 0 50px 0 !important;
+      }
+
+      .about .row {
+        flex-direction: row !important;
+      }
+
+      .about .col-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .about h2,
+      .about h3,
+      .about p {
+        text-align: left !important;
+      }
+    }
+
+    @media (max-width: 996px) {
+      body.modal-aberto {
+        align-items: normal;
+      }
+
+      .container {
+        width: 100% !important;
+      }
+
+      footer {
+        overflow-x: hidden;
+      }
+
+      .row {
+        flex-direction: column;
+      }
+
+      .col-left,
+      .col-mid,
+      .col-right,
+      .col {
+        width: 100% !important;
+        padding: 0 12px;
+      }
+
+      .desktop {
+        display: none;
+      }
+
+      .mobile {
+        display: block;
+      }
+
+      .hero {
+        padding: 120px 10px 50px 10px;
+        background-image: url(assets/img/bg-01-mob.webp);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+
+      header {
+        padding: 15px 10px;
+      }
+
+      .logo {
+        gap: 8px;
+        justify-content: space-between;
+      }
+
+      .site_logo {
+        width: 25.26vw;
+      }
+
+      .site_selo {
+        width: 12.63vw;
+      }
+
+      .site_selo_tha {
+        width: 26.31vw;
+      }
+
+      .menu-btn {
+        position: relative;
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .menu-btn span {
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 3px;
+        background-color: #ffffff;
+        transform: rotate(0);
+        transition: 0.5s ease;
+      }
+
+      .menu-btn span:nth-child(1) {
+        transform: translateY(-12px);
+      }
+
+      .menu-btn span:nth-child(2) {
+        transform: translateY(12px);
+      }
+
+      .menu-btn.active span:nth-child(1) {
+        transform: translateY(0) rotate(45deg);
+      }
+
+      .menu-btn.active span:nth-child(2) {
+        transform: translateY(0) rotate(135deg);
+      }
+
+      .menu-btn.active span:nth-child(3) {
+        transform: translateX(100px);
+      }
+
+      .menu_ul {
+        position: absolute;
+        top: 70px;
+        left: -110%;
+        width: 100%;
+        padding: 30px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000B1C;
+        transition: all 0.5s ease;
+        gap: 30px !important;
+        z-index: 9;
+      }
+
+      .menu_ul.open {
+        left: 0;
+      }
+
+      #whatsapp a {
+        font-size: 15px;
+      }
+
+      #whatsapp .chevron {
+        font-size: 10px;
+      }
+
+      .hero .row_hr {
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .destaques_cdt {
+        padding: 8px;
+        backdrop-filter: blur(12px);
+      }
+
+      .destaques_cdt h3 {
+        font-size: 9px;
+      }
+
+      .destaques_cdt img {
+        width: 14px;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .txt1 {
+        top: 50px;
+        left: -18px;
+      }
+
+      .txt2 {
+        bottom: -20px;
+        left: 25px;
+      }
+
+      .txt3 {
+        bottom: 65px;
+        right: -18px;
+      }
+
+      .txt1 h4 {
+        font-size: 6px;
+      }
+
+      .txt2 h4 {
+        font-size: 9px;
+      }
+
+      .txt3 h4 {
+        font-size: 8px;
+      }
+
+      .ajp-marquee p {
+        font-size: 9px;
+      }
+
+      .ajp-marquee p span {
+        width: 39px;
+        height: 39px;
+      }
+    }
+  </style>
+  <!-- Google Tag Manager AJP -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://gtm.institutocdt.com.br/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T44FS9MQ');</script>
+  <!-- End Google Tag Manager AJP -->
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) AJP -->
+  <noscript><iframe src="https://gtm.institutocdt.com.br/ns.html?id=GTM-T44FS9MQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) AJP -->
+  <section class="hero" id="hero">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="logo">
+              <a href="/"><img src="assets/img/logo_branco.webp" class="img-fluid site_logo" width="157" height="82" alt="Logo CDT"></a>
+              <img src="assets/img/top_of_mind_brazil-mq.webp" class="img-fluid site_selo" width="82" height="82" alt="top_of_mind_brazil">
+              <img src="assets/img/The_Health_Awards-2025.webp" class="img-fluid site_selo_tha" width="150" height="82" alt="The Health Awards 2025">
+            </div>
+            <nav>
+              <div class="menu">
+                <div class="menu-btn" onclick="menuShow()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <ul class="menu_ul">
+                  <li><a class="botao" href="/#posgraduacoes">Pós-Graduações</a></li>
+                  <li><a href="/#imersoes">Imersões</a></li>
+                  <li><a href="/#cursos">Cursos</a></li>
+                  <li><a href="/#livros">Livros</a></li>
+                  <li><a href="/#blog">Blog</a></li>
+                  <!-- <li><span class="contato">WhatsApp</span></li> -->
+                  <li id="whatsapp" class="contato">WhatsApp <span class="chevron">▼</span>
+                    <ul>
+                      <li><a href="https://api.whatsapp.com/send?phone=5583991158909" target="_blank">Suporte WhatsApp</a></li>
+                      <li><a href="https://api.whatsapp.com/send?phone=5511949539394" target="_blank">Vendas WhatsApp</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row row_hr">
+        <div class="col-left">
+          <div class="hr_content">
+            <h2 class="desktop">Método<br> Dr. <span>Thiago Amorim</span></h2>
+            <h2 class="mobile">Método Dr. <span>Thiago Amorim</span></h2>
+            <p>Um método que respeita o tempo dos nossos alunos. Conteúdo com uma abordagem <b>extremamente prática</b> para o médico que trabalha e quer <b>resolver problemas</b>.</p>
+            <p>No Instituto CDT, você não ficará abandonado: o <b>suporte ao aluno</b> é nosso forte!</p>
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="metodo_thiago">
+            <img src="assets/img/metodo_thiago_high.webp" class="img-fluid" width="630" height="458" alt="Instituto CDT">
+            <div class="destaques_cdt txt1">
+              <div>
+                <img src="assets/img/user_icon.svg" alt="user_icon">
+                <h3>+ de 21.000</h3>
+              </div>
+              <h4>Alunos em nossos cursos</h4>
+            </div>
+            <div class="destaques_cdt txt2">
+              <div>
+                <img src="assets/img/pos_icon.svg" alt="user_icon">
+                <h3>7 Pós-Graduações</h3>
+              </div>
+              <h4>Disponíveis para você</h4>
+            </div>
+            <div class="destaques_cdt txt3">
+              <div>
+                <img src="assets/img/grad_icon.svg" alt="user_icon">
+                <h3>Imersões</h3>
+              </div>
+              <h4>Capacitação de alto nível</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="letreiro">
+    <div class="ajp-marquee">
+      <p>INSTITUTO CDT <span></span></p>
+      <p>INSTITUTO CDT <span></span></p>
+      <p>INSTITUTO CDT <span></span></p>
+      <p>INSTITUTO CDT <span></span></p>
+      <p>INSTITUTO CDT <span></span></p>
+      <p>INSTITUTO CDT <span></span></p>
+      <p>INSTITUTO CDT <span></span></p>
+      <p>INSTITUTO CDT <span></span></p>
+      <p>INSTITUTO CDT <span></span></p>
+      <p>INSTITUTO CDT <span></span></p>
+      <p>INSTITUTO CDT <span></span></p>
+      <p>INSTITUTO CDT <span></span></p>
+      <p>INSTITUTO CDT <span></span></p>
+      <p>INSTITUTO CDT <span></span></p>
+      <p>INSTITUTO CDT <span></span></p>
+      <p>INSTITUTO CDT <span></span></p>
+    </div>
+  </div>
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="temp-video" onclick="reproduzirVideo();">
+            <img src="assets/img/thumbnail.webp" width="1064" class="thumb" height="601" loading="lazy">
+            <img src="assets/img/player.svg" width="143" height="143" alt="YouTube" class="play" loading="lazy">
+          </div>
+          <div class="pilares_content">
+            <div class="row">
+              <div class="col-left">
+                <h2>Os pilares do <br><span>Instituto CDT</span></h2>
+              </div>
+              <div class="col-right">
+                <p><span>1.</span> <b>Transformar</b> a medicina brasileira;</p>
+                <p><span>2.</span> Criar médicos <b>resolvedores</b> de problemas;</p>
+                <p><span>3.</span> Gerar novas <b>oportunidades</b> de emprego e maior <b>remuneração</b> para nossos alunos.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="pos_bkg_start"></div>
+  <section id="posgraduacoes">
+    <div class="selos">
+      <div class="img-selo">
+        <div class="circulos"></div>
+        <img src="assets/img/selo_certificado_mec.webp" alt="Certificado MEC" width="127" height="127" loading="lazy">
+      </div>
+      <div class="img-selo">
+        <div class="circulos"></div>
+        <div class="selo_cdt"></div>
+      </div>
+      <div class="img-selo">
+        <div class="circulos"></div>
+        <img src="assets/img/selo_platinum.webp" alt="Selo Top of Mind Brazil" width="139" height="139" loading="lazy">
+      </div>
+      <div class="img-selo">
+        <div class="circulos"></div>
+        <img src="assets/img/Selo_LAQY.webp" alt="Selo The Health Awards 2025" width="216" height="121" loading="lazy">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="content">
+            <div class="divisor">
+              <img src="assets/img/divisor.svg" width="54" height="4" alt="Divisor" loading="lazy">
+            </div>
+            <h2>Pós-Graduações</h2>
+            <h3>Impulsione sua carreira médica!</h3>
+          </div>
+          <div class="row-line4">
+            <a href="https://institutocdt.com.br/pos_medicinadeemergencia/" target="_blank" id="pgme">
+              <div class="card" style="--bkg: url(assets/img/card-01-desktop.webp); --bkg_mob: url(assets/img/card-01-mobile.webp)">
+                <div class="card_content">
+                  <h2>Medicina de Emergência</h2>
+                  <h5>Híbrido ou EAD</h5>
+                  <h4>Dr. Vinicius Sauerressig</h4>
+                  <h6>CRM-PR 43.319</h6>
+                  <ul>
+                    <li>Habilidades especializadas: vias aéreas avançadas; proficiência em suporte ventilatório mecânico, domínio em ultrassonografia beira-leito.</li>
+                    <li>Preceptor de Emergências na UFPR (Campus Toledo).</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+            <a href="https://institutocdt.com.br/pos_emergenciaspediatricas/" target="_blank" id="pgep">
+              <div class="card" style="--bkg: url(assets/img/card-02-desktop.webp); --bkg_mob: url(assets/img/card-02-mobile.webp)">
+                <div class="card_content">
+                  <h2>Emergências Pediátricas e Neonatais</h2>
+                  <h5>Híbrido ou EAD</h5>
+                  <h4>Dra. Caline Daisy</h4>
+                  <h6>CRM-MT 6543 | RQE 5362</h6>
+                  <ul>
+                    <li>Diretora da Cardio-oncologia do InCor-HC-FMUSP.</li>
+                    <li>Especialização em Cuidados Paliativos Pediátricos.</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+            <a href="https://institutocdt.com.br/pos_medicinaintensiva/" target="_blank" id="pgmi">
+              <div class="card" style="--bkg: url(assets/img/card-03-desktop.webp); --bkg_mob: url(assets/img/card-03-mobile.webp)">
+                <div class="card_content">
+                  <h2>Medicina Intensiva</h2>
+                  <h5>Híbrido ou EAD</h5>
+                  <h4>Dr. Itamar Regazzo</h4>
+                  <h6>CRM-PR 29.333 | RQE 23829</h6>
+                  <ul>
+                    <li>Especialização em Cuidados Paliativos pelo Instituto Palium e Controle de Infecções Hospitalares pelo Hospital Albert Einstein.</li>
+                    <li>Instrutor nacional do VENUTI e membro do <i>board</i> de ventilação mecânica da AMIB.</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+            <a href="https://institutocdt.com.br/pos_medicina-dor/" target="_blank" id="pgmd">
+              <div class="card" style="--bkg: url(assets/img/card-04-desktop.webp); --bkg_mob: url(assets/img/card-04-mobile.webp)">
+                <div class="card_content">
+                  <h2>Medicina da Dor</h2>
+                  <h5>Híbrido ou EAD</h5>
+                  <h4>Dra. Isabela Dantas</h4>
+                  <h6>CRM-SP 179.987 | RQE 874.531</h6>
+                  <ul>
+                    <li>Membro do Comitê de Dor e Integrativa da Sociedade Brasileira para o Estudo da Dor (SBED).</li>
+                    <li>Pós-graduada em Medicina Regenerativa - BIRM / Orthoregen.</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+            <a href="https://institutocdt.com.br/pos_nutrologia/" target="_blank" id="pgnt">
+              <div class="card" style="--bkg: url(assets/img/card-05-desktop.webp); --bkg_mob: url(assets/img/card-05-mobile.webp)">
+                <div class="card_content">
+                  <h2>Nutrologia</h2>
+                  <h5>Híbrido ou EAD com Ambulatório via Telemedicina</h5>
+                  <h4>Dr. Manoel Quintino</h4>
+                  <h6>CRM-SP: 166.432 | RQE 133.759</h6>
+                  <ul>
+                    <li>Diploma pela Harvard Medical School em Medicina da Obesidade.</li>
+                    <li>Áreas de especializações: Medicina Esportiva, Nutrologia, Medicina da Obesidade.</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+            <a href="https://institutocdt.com.br/pos_psiquiatria/" target="_blank" id="pgps">
+              <div class="card" style="--bkg: url(assets/img/card-06-desktop.webp); --bkg_mob: url(assets/img/card-06-mobile_v2.webp)">
+                <div class="card_content">
+                  <h2>Psiquiatria</h2>
+                  <h5>Híbrido ou EAD com Ambulatório via Telemedicina</h5>
+                  <h4>Dr. Alexandre Matsuo Nomura</h4>
+                  <h6>CRM 168.275 | RQE 99.724</h6>
+                  <ul>
+                    <li>Médico psiquiatra pelo Instituto de Psiquiatria do Hospital das Clínicas - USP.</li>
+                    <li>Pós-graduação em Psicologia Fenomenológica e Hermenêutica.</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+            <a href="https://institutocdt.com.br/pos_endocrinologia/" target="_blank" id="pgen">
+              <div class="card" style="--bkg: url(assets/img/card-07-desktop.webp); --bkg_mob: url(assets/img/card-07-mobile.webp)">
+                <div class="card_content">
+                  <h2>Endocrinologia</h2>
+                  <h5>Híbrido ou EAD com Ambulatório via Telemedicina</h5>
+                  <h4>Dra. Thaísa Carvalho Fernandes</h4>
+                  <h6>CRM-SP 195.327 | RQE 118.996</h6>
+                  <ul>
+                    <li>Residência em Endocrinologia e Metabologia na UFTM.</li>
+                    <li>Preceptora de Endocrinologia do Internato da Faculdade de Medicina da Universidade de São Paulo – HCFMUSP – SP.</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+            <!-- <a href="https://institutocdt.com.br/pos_ultrassonografia/" target="_blank" id="pgus">
+              <div class="card" style="--bkg: url(assets/img/card_08_desktop.webp); --bkg_mob: url(assets/img/card_08_mob.webp)">
+                <div class="card_content">
+                  <h2>Ultrassonografia<br>
+                    Point-of-Care (POCUS)</h2>
+                  <h5>Híbrido</h5>
+                  <h4>Dr. Mario Henrique Dutra</h4>
+                  <h6>CRM-SP: 111.163 | RQE: 28138</h6>
+                  <ul>
+                    <li>Especialista em Medicina Intensiva pela Associação de Medicina Intensiva Brasileira - AMIB;</li>
+                    <li>Coordenador Médico de Terapia Intensiva do Hospitalis - Núcleo Hospitalar de Barueri - SP pelo Grupo Saluti.</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+            <a href="https://forms.gle/CnNYXXCv7z3d6EJx5" target="_blank" id="pgec">
+              <div class="card card_end" style="--bkg: url(assets/img/card-09-desktop_provisorio.webp); --bkg_mob: url(assets/img/card-09-mobile_provisorio.webp)">
+                <div class="card_content">
+                  <h2>Ecocardiografia</h2>
+                  <h5>Híbrido</h5>
+                  <h4 class="d-none">Coordenador</h4>
+                  <h6 class="d-none">CRM-SP 10000000 | RQE 00000000</h6>
+                  <ul>
+                    <li>Duração: 12 meses;</li>
+                    <li>Carga horária: 360h;</li>
+                    <li>Certificado validado pelo MEC.</li>
+                  </ul>
+                </div>
+                <style>
+                  @media (min-width: 996px) {
+                    #pgec .card_content {
+                      padding-bottom: 25%;
+                    }
+                  }
+                </style>
+              </div>
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pos_bkg_end"></div>
+  </section>
+  <section id="imersoes">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="content">
+            <div class="divisor">
+              <img src="assets/img/divisor.svg" alt="Divisor" width="54" height="4" loading="lazy">
+            </div>
+            <h2>Imersões</h2>
+            <h3>Capacitação de alto nível!</h3>
+            <p>Realize mais de 100 intubações em diferentes anatomias e <b>nunca mais tenha problemas com via aérea</b>. São cadáveres trazidos dos EUA para você desenvolver uma das habilidades pilares de qualquer médico.</p>
+          </div>
+          <div class="row-line4">
+            <a href="https://institutocdt.com.br/imersaopresencialviaaereaavancada/" target="_blank" id="ipvaa">
+              <div class="card" style="--bkg: url(assets/img/imagem-imersao-01.webp)">
+                <div class="card_content">
+                  <h5>IMERSÃO PRESENCIAL EM</h5>
+                  <h2>Via Aérea Avançada com Cadáveres Frescos</h2>
+                </div>
+              </div>
+            </a>
+            <a href="https://institutocdt.com.br/imersaopresencialacessovenosocentral/" target="_blank" id="ipac">
+              <div class="card" style="--bkg: url(assets/img/imagem-imersao-02.webp)">
+                <div class="card_content">
+                  <h5>IMERSÃO PRESENCIAL EM</h5>
+                  <h2>Acesso Venoso Central em Cadáveres</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="cursos">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="content">
+            <div class="divisor">
+              <img src="assets/img/divisor.svg" alt="Divisor" width="54" height="4" loading="lazy">
+            </div>
+            <h2>Cursos Livres</h2>
+            <h3>Evolução médica constante!</h3>
+            <p>Conteúdos valiosos que se encaixam em sua rotina. Cursos para médicos que buscam atualização contínua. Conhecimento 100% aplicável à vida real, acessível e com didática prática.</p>
+          </div>
+          <div class="row-line4">
+            <a href="https://institutocdt.com.br/intubacao-pediatrica/" target="_blank" id="iot_ped">
+              <div class="card">
+                <div class="card_content">
+                  <h5>CURSOS</h5>
+                  <h2>Intubação Orotraqueal Pediátrica</h2>
+                  <img src="assets/img/imagem_curso_01_desktop.webp" width="373" height="372" class="desktop" alt="Intubação Pediátrica" loading="lazy">
+                  <img src="assets/img/imagem_curso_01_mobile.webp" width="373" height="212" class="mobile" alt="Intubação Pediátrica" loading="lazy">
+                </div>
+              </div>
+            </a>
+            <a href="https://institutocdt.com.br/curso-intubacao-orotraqueal/" target="_blank" id="iot">
+              <div class="card">
+                <div class="card_content">
+                  <h5>CURSOS</h5>
+                  <h2>Aperfeiçoamento Intubação Orotraqueal</h2>
+                  <img src="assets/img/imagem_curso_02_desktop.webp" width="373" height="372" class="desktop" alt="IOT" loading="lazy">
+                  <img src="assets/img/imagem_curso_02_mobile.webp" width="373" height="212" class="mobile" alt="IOT" loading="lazy">
+                </div>
+              </div>
+            </a>
+            <a href="https://institutocdt.com.br/ventilacao/" target="_blank" id="vm">
+              <div class="card">
+                <div class="card_content">
+                  <h5>CURSOS</h5>
+                  <h2>Ventilação Mecânica do Básico ao Avançado</h2>
+                  <img src="assets/img/imagem_curso_03-desktop.webp" width="373" height="372" class="desktop" alt="VM" loading="lazy">
+                  <img src="assets/img/imagem_curso_03_mobile.webp" width="373" height="212" class="mobile" alt="VM" loading="lazy">
+                </div>
+              </div>
+            </a>
+            <a href="https://institutocdt.com.br/cursos/guia-de-puncoes/" target="_blank" id="cgp">
+              <div class="card ">
+                <div class="card_content">
+                  <h5>CURSOS</h5>
+                  <h2>Guia de Punções</h2>
+                  <div class="gap"></div>
+                  <img src="assets/img/imagem_curso_04-desktop.webp" width="373" height="372" class="desktop" alt="CGP" loading="lazy">
+                  <img src="assets/img/imagem_curso_04_mobile.webp" width="373" height="212" class="mobile" alt="CGP" loading="lazy">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="livros">
+    <div id="livros_bkg_start"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="content">
+            <div class="divisor">
+              <img src="assets/img/divisor.svg" alt="Divisor" width="54" height="4" loading="lazy">
+            </div>
+            <h2>Livros</h2>
+            <h3>Conhecimento prático sempre com você!</h3>
+            <p>Sem teorias exaustivas. Nossos livros vão direto ao ponto e oferecem aprendizado prático com anotações exclusivas, dicas e macetes de alguém que entende sua realidade de verdade.</p>
+          </div>
+          <div class="row-line4">
+            <a href="https://institutocdt.com.br/livros/manual-de-ventilacao-mecanica/" target="_blank" id="l_mvm">
+              <div class="card" style="--bkg: url(assets/img/bg-livro-01-dektop.webp); --bkg_mob: url(assets/img/bg-livro-03-mobile.webp)">
+                <div class="card_content">
+                  <div class="card_txt">
+                    <h5>LIVROS</h5>
+                    <h2 class="mobile" style="--gdt: linear-gradient(90deg, #37C0FF, #76A3FF);">Manual Prático de <span>Ventilação Mecânica</span></h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/img/livro-01.webp" width="288" height="360" alt="Livro VM" loading="lazy">
+                  </div>
+                  <h2 class="desktop" style="--gdt: linear-gradient(90deg, #37C0FF, #76A3FF);">Manual Prático de <span>Ventilação Mecânica</span></h2>
+                </div>
+              </div>
+            </a>
+            <a href="https://institutocdt.com.br/livros/manual-pratico-de-sedacao-avancada/" target="_blank" id="l_msa">
+              <div class="card sec_edition" style="--bkg: url(assets/img/bg-livro-02-dektop.webp); --bkg_mob: url(assets/img/bg-livro-02-mobile.webp)">
+                <div class="card_content">
+                  <div class="card_txt">
+                    <h5>LIVROS</h5>
+                    <h2 class="mobile" style="--gdt: linear-gradient(90deg, #37C0FF, #76A3FF);">Manual Prático de <span>Sedação Avançada</span></h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/img/livro-02.webp" width="288" height="390" alt="Manual Sedação Avançada">
+                  </div>
+                  <h2 class="desktop" style="--gdt: linear-gradient(90deg, #37C0FF, #76A3FF);">Manual Prático de <span>Sedação Avançada</span></h2>
+                </div>
+              </div>
+            </a>
+            <a href="https://institutocdt.com.br/manual-iot/" target="_blank" id="l_miot">
+              <div class="card" style="--bkg: url(assets/img/bg-livro-03-dektop.webp); --bkg_mob: url(assets/img/bg-livro-01-mobile.webp)">
+                <div class="card_content">
+                  <div class="card_txt">
+                    <h5>LIVROS</h5>
+                    <h2 class="mobile" style="--gdt: linear-gradient(90deg, #FF8686, #FF5454);">Manual Prático de <span>Intubação Orotraqueal</span></h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/img/livro-03.webp" width="294" height="390" alt="Manual IOT" loading="lazy">
+                  </div>
+                  <h2 class="desktop" style="--gdt: linear-gradient(90deg, #FF8686, #FF5454);">Manual Prático de <span>Intubação Orotraqueal</span></h2>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="row-line4">
+            <a href="https://institutocdt.com.br/livros/biblia_ecg/" target="_blank" id="l_becg">
+              <div class="card" style="--bkg: url(assets/img/bg-livro-04-dektop.webp); --bkg_mob: url(assets/img/bg-livro-04-mobile.webp)">
+                <div class="card_content">
+                  <div class="card_txt">
+                    <h5>LIVROS</h5>
+                    <h2 class="mobile" style="--gdt: linear-gradient(90deg, #FF8686, #FF5454);">A Bíblia do <span>ECG</span></h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/img/livro-04.webp" width="299" height="360" alt="Bíblia ECG" loading="lazy">
+                  </div>
+                  <h2 class="desktop" style="--gdt: linear-gradient(90deg, #FF8686, #FF5454);">A Bíblia do <span>ECG</span></h2>
+                </div>
+              </div>
+            </a>
+            <a href="https://institutocdt.com.br/manual-pratico-de-agentes-vasoativos/" target="_blank" id="l_mav">
+              <div class="card" style="--bkg: url(assets/img/bg-livro-05-dektop.webp); --bkg_mob: url(assets/img/bg-livro-05-mobile.webp)">
+                <div class="card_content">
+                  <div class="card_txt">
+                    <h5>LIVROS</h5>
+                    <h2 class="mobile" style="--gdt: linear-gradient(90deg, #FF8686, #FF5454);">Manual Prático de <span>Agentes Vasoativos</span></h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/img/livro-05.webp" width="308" height="390" alt="Manual Agentes Vasoativos" loading="lazy">
+                  </div>
+                  <h2 class="desktop" style="--gdt: linear-gradient(90deg, #FF8686, #FF5454);">Manual Prático de <span>Agentes Vasoativos</span></h2>
+                </div>
+              </div>
+            </a>
+            <a href="https://institutocdt.com.br/livros/manual-pratico-de-procedimentos-medicos/" target="_blank" id="l_mpp">
+              <div class="card card_end2" style="--bkg: url(assets/img/bg-livro-06-dektop.webp); --bkg_mob: url(assets/img/bg-livro-06-mobile.webp)">
+                <div class="card_content">
+                  <div class="card_txt">
+                    <h5>LIVROS</h5>
+                    <h2 class="mobile" style="--gdt: linear-gradient(90deg, #007BC5, #73D0FF);">Manual Prático de <span>Procedimentos Médicos</span></h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/img/livro-06.webp" width="308" height="390" alt="Manual Procedimentos Médicos" loading="lazy">
+                  </div>
+                  <h2 class="desktop" style="--gdt: linear-gradient(90deg, #007BC5, #73D0FF);">Manual Prático de <span>Procedimentos Médicos</span></h2>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="selos">
+      <div class="img-selo">
+        <div class="circulos"></div>
+        <img src="assets/img/selo_certificado_mec.webp" alt="Certificado MEC" width="127" height="127" loading="lazy">
+      </div>
+      <div class="img-selo">
+        <div class="circulos"></div>
+        <div class="selo_cdt"></div>
+      </div>
+      <div class="img-selo">
+        <div class="circulos"></div>
+        <img src="assets/img/selo_platinum.webp" alt="Selo Top of Mind Brazil" width="139" height="139" loading="lazy">
+      </div>
+      <div class="img-selo">
+        <div class="circulos"></div>
+        <img src="assets/img/Selo_LAQY.webp" alt="Selo The Health Awards 2025" width="216" height="121" loading="lazy">
+      </div>
+    </div>
+    <div id="livros_bkg_end"></div>
+  </section>
+  <section id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="posts_header">
+            <h2>Últimos <span>posts do Blog</span></h2>
+            <a href="https://institutocdt.com.br/blog/" target="_blank" class="btn-blog desktop" id="artigos">VER TODOS OS ARTIGOS <img src="assets/img/chev.svg" width="9" height="18" alt="Arrow" loading="lazy"></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col posts_container">
+          <div class="posts">
+            <div class="blog-posts"></div>
+          </div>
+        </div>
+        <div class="div_btn-blog_mobile mobile">
+          <a href="https://institutocdt.com.br/blog/" target="_blank" class="btn-blog mobile">VER TODOS OS ARTIGOS <img src="assets/img/chev.svg" width="7" height="13" alt="Arrow" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="container">
+      <div class="row row_footer_1">
+        <div class="logo_footer">
+          <img src="assets/img/logo_branco.webp" width="126" height="65" alt="Logo CDT" loading="lazy">
+          <div class="back_to_top mobile">
+            <a href="#hero">Voltar ao topo <img src="assets/img/back_to_top.svg" width="22" height="20" alt="Top" loading="lazy"></a>
+          </div>
+        </div>
+        <div class="socials">
+          <span>Acompanhe nas redes sociais</span>
+          <ul>
+            <li><a href="https://www.youtube.com/channel/UCmljj6vCQ2ZGv4832SRoq0g" target="_blank"><img src="assets/img/youtube_icon.svg" width="35" height="34" alt="youtube" loading="lazy"></a></li>
+            <li><a href="https://www.tiktok.com/@drthiago" target="_blank"><img src="assets/img/tiktok_icon.svg" width="35" height="34" alt="tiktok" loading="lazy"></a></li>
+            <li><a href="https://www.instagram.com/institutocdt/" target="_blank"><img src="assets/img/instagram_icon.svg" width="35" height="34" alt="instagram" loading="lazy"></a></li>
+            <li><a href="https://www.linkedin.com/company/81813900/" target="_blank"><img src="assets/img/linkedin_icon.svg" width="35" height="34" alt="linkedin" loading="lazy"></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5583991158909" target="_blank"><img src="assets/img/whatsapp_icon.svg" width="35" height="34" alt="whatsapp" loading="lazy"></a></li>
+          </ul>
+        </div>
+        <div class="back_to_top desktop">
+          <a href="#hero">Voltar ao topo <img src="assets/img/back_to_top.svg" width="22" height="20" alt="Top" loading="lazy"></a>
+        </div>
+      </div>
+      <div class="footer_divisor"></div>
+      <div class="row row_footer_2">
+        <div class="footer_about">
+          <h2>Instituto CDT de Desenvolvimento em Ciências Médicas LTDA</h2>
+          <p>Rua Nova Jerusalém, 683, Chácara Santo Antônio (Zona Leste), São Paulo - SP. CEP: 03410-000</p>
+          <p>CNPJ: 34.754.387/0001-93</p>
+        </div>
+        <div class="footer_menu">
+          <h4>Pós-graduações</h4>
+          <ul>
+            <li><a href="https://institutocdt.com.br/pos_medicinadeemergencia/" target="_blank" id="fpgme">Medicina de Emergência</a></li>
+            <li><a href="https://institutocdt.com.br/pos_emergenciaspediatricas/" target="_blank" id="fpgep">Emergências Pediátricas e Neonatais</a></li>
+            <li><a href="https://institutocdt.com.br/pos_medicinaintensiva/" target="_blank" id="fpgmi">Medicina Intensiva</a></li>
+            <li><a href="https://institutocdt.com.br/pos_medicina-dor/" target="_blank" id="fpgmd">Medicina da Dor</a></li>
+            <li><a href="https://institutocdt.com.br/pos_nutrologia/" target="_blank" id="fpgnt">Nutrologia</a></li>
+            <li><a href="https://institutocdt.com.br/pos_psiquiatria/" target="_blank" id="fpgps">Psiquiatria</a></li>
+            <li><a href="https://institutocdt.com.br/pos_endocrinologia/" target="_blank" id="fpgen">Endocrinologia</a></li>
+            <li><a href="https://institutocdt.com.br/pos_ultrassonografia" target="_blank" id="fpgus">Ultrassonografia<br> Point-of-Care (POCUS)</a></li>
+            <li><a href="https://forms.gle/CnNYXXCv7z3d6EJx5" target="_blank" id="fpgec">Ecocardiografia</a></li>
+          </ul>
+        </div>
+        <div class="footer_menu">
+          <h4>Imersões</h4>
+          <ul>
+            <li><a href="https://institutocdt.com.br/imersaopresencialviaaereaavancada/" target="_blank" id="fipvaa">Via Aérea Avançada com Cadáveres Frescos</a></li>
+            <li><a href="https://institutocdt.com.br/imersaopresencialacessovenosocentral/" target="_blank" id="fipac">Acesso Venoso Central em Cadáveres</a></li>
+          </ul>
+          <h4 class="cl">Cursos livres</h4>
+          <ul>
+            <li><a href="https://institutocdt.com.br/intubacao-pediatrica/" target="_blank" id="fiot_ped">Intubação Orotraqueal Pediátrica</a></li>
+            <li><a href="https://institutocdt.com.br/curso-intubacao-orotraqueal/" target="_blank" id="fiot">Aperfeiçoamento Intubação Orotraqueal</a></li>
+            <li><a href="https://institutocdt.com.br/ventilacao/" target="_blank" id="fvm">Ventilação Mecânica</a></li>
+            <li><a href="https://institutocdt.com.br/cursos/guia-de-puncoes/" target="_blank" id="fcgp">Guia de Punções</a></li>
+          </ul>
+        </div>
+        <div class="footer_menu">
+          <h4>Livros</h4>
+          <ul>
+            <li><a href="https://institutocdt.com.br/manual-pratico-de-agentes-vasoativos/" target="_blank" id="fl_mav">Manual Prático de Agentes Vasoativos</a></li>
+            <li><a href="https://institutocdt.com.br/livros/manual-de-ventilacao-mecanica/" target="_blank" id="fl_mvm">Manual Prático de Ventilação Mecânica</a></li>
+            <li><a href="https://institutocdt.com.br/livros/manual-pratico-de-sedacao-avancada/" target="_blank" id="fl_msa">Manual Prático de Sedação Avançada</a></li>
+            <li><a href="https://institutocdt.com.br/manual-iot/" target="_blank" id="fl_miot">Manual Prático de Intubação Orotraqueal</a></li>
+            <li><a href="https://institutocdt.com.br/livros/biblia_ecg/" target="_blank" id="fl_becg">A Bíblia do ECG</a></li>
+            <li><a href="https://institutocdt.com.br/livros/manual-pratico-de-procedimentos-medicos/" target="_blank" id="fl_mpp">Manual Prático de Procedimentos Médicos</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section class="legal">
+      <div class="container">
+        <div class="row">
+          <div class="copyright">
+            <p>© <span id="ano"></span> - Todos os Direitos Reservados</p>
+          </div>
+          <div class="politicas">
+            <ul>
+              <li><a href="https://institutocdt.com.br/politica-de-privacidade/" target="_blank">Política de Privacidade</a></li>
+              <li>|</li>
+              <li><a href="https://institutocdt.com.br/termos-de-uso/" target="_blank">Termos de Uso</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <link rel="stylesheet" href="style.css?v=2.0.0.0.0.0.0.2.7" media="all" />
+  <script src="script.js?v=2.0.0.0.0.0.0.2.2" defer></script>
+  <script>
+function getUrlParams() {
+  const params = new URLSearchParams(window.location.search);
+  return params.toString();
+}
+
+function appendParamsToLinks() {
+  const params = getUrlParams();
+  if (!params) return;
+
+  document.querySelectorAll('a').forEach(link => {
+    if (link.href && !link.href.startsWith('javascript:') && !link.href.startsWith('#')) {
+      let url = new URL(link.href);
+      url.search += (url.search ? '&' : '') + params;
+      link.href = url.toString();
+    }
+  });
+}
+
+window.addEventListener('DOMContentLoaded', appendParamsToLinks);
+  </script>
+  
+</body>
+</html>

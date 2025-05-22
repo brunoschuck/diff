@@ -1,0 +1,14 @@
+<title>Gestão de Contrato PJ | ContrataPJ</title>
+<meta name="description" content="Somos a melhor opção de plataforma de gestão de contrato de PJ (MEI e ME) do Brasil. Contrate com segurança!">
+<h2>Envio e Gestão de Contratos de Documentos para Assinaturas</h2>
+<h2>Emissão de Notas Fiscais</h2>
+<h2>Monitoramento de Períodos de Renovação</h2>
+<h2>Supervisão de Situação Cadastral dos CNPJs</h2>
+<h2>Notificação de Processos</h2>
+<h2>Arquivamento de Documentos</h2>
+<h2>Envio e Gestão de Contratos de Documentos para Assinaturas</h2>
+<h2>Emissão de Notas Fiscais</h2>
+<h2>Monitoramento de Períodos de Renovação</h2>
+<h2>Supervisão de Situação Cadastral dos CNPJs</h2>
+<h2>Notificação de Processos</h2>
+<h2>Arquivamento de Documentos</h2>

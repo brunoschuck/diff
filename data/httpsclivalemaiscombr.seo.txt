@@ -1,0 +1,7 @@
+<title>
+	Centro de Saúde Integrada em Salvador | ClivaleMais
+</title>
+<meta name="description" content="Atendimento multidisciplinar em um só lugar. Sua saúde em boas mãos na ClivaleMais!">
+<h1>CLIVALEMAIS</h1>
+<h2>Atendimento por plano de saúde ou particular</h2>
+<h2>Unidades</h2>

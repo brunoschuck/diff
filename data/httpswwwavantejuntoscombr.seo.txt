@@ -1,0 +1,44 @@
+<title>Avante - Sistema De Gestão Comercial</title>
+<meta name="description" content="Avante Soluções Digitais: sistemas de gestão comercial para pequenas e médias empresas. Fácil de usar, ótimo para vender. Descubra nossas soluções.">
+<h3>Explore nossos produtos</h3>
+<h3>Explore nossos modelos de parceria</h3>
+<h3>Explore nossos produtos</h3>
+<h3>Explore nossos modelos de parceria</h3>
+<h1>Fácil de usar. Ótimo pra vender.</h1>
+<h2>Nossos produtos</h2>
+<h3>Avante® Web</h3>
+<h3>Avante® Agro</h3>
+<h3>Avante® Food</h3>
+<h3>Avante® Clínicas</h3>
+<h3>Avante® Salões</h3>
+<h3>Avante® Pet</h3>
+<h3>Avante® Shop</h3>
+<h2>Fácil de usar. Ótimo pra vender.</h2>
+<h2>Algunsnúmeros</h2>
+<h2>Números que dizem muito</h2>
+<h3>+</h3>
+<h3>0</h3>
+<h3>+</h3>
+<h3>0</h3>
+<h3>+</h3>
+<h3>0</h3>
+<h3>mil</h3>
+<h3>+</h3>
+<h3>0</h3>
+<h3>mil</h3>
+<h2>Temos um produto para cada tipo de negócio</h2>
+<h3>Avante® Web</h3>
+<h3>Avante® Agro</h3>
+<h3>Avante® Food</h3>
+<h3>Avante® Clínicas</h3>
+<h3>Avante® Salões</h3>
+<h3>Avante® Pet</h3>
+<h3>Avante® Shop</h3>
+<h2>Parceiro.Avante com liberdade</h2>
+<h3>A gente personaliza tudo.
+Tudo mesmo.</h3>
+<h3>Pra quem é indicado este modelo?</h3>
+<h3>É só indicar. Sem custos.
+Sem fidelidade.</h3>
+<h3>Pra quem é indicado este modelo?</h3>
+<h2>Mais de 22 mil clientes em todo o país</h2>

@@ -1,0 +1,52 @@
+<title>Aplicativo Médico para Pacientes | VSaúde</title>
+<meta name="description" content="Médico prospera na sua clínica cuidando do seu paciente com um aplicativo mobile. Conheça e se torne referência!">
+<h2>Início</h2>
+<h2>Soluções</h2>
+<h1>Médico,  você jápossui o app dasua clínica?</h1>
+<h1>Médico,  você jápossui o app dasua clinica?</h1>
+<h2>Aumente seu faturamento e otimize seu tempo ao proporcionar 
+uma Experiência Premium aos seus pacientes.​</h2>
+<h2>A melhor experiência para o seu paciente do pré ao pós atendimento</h2>
+<h3>App exclusivo e personalizado  para sua clínica</h3>
+<h3>Gerenciador do App</h3>
+<h3>Área do paciente</h3>
+<h3>Sistema de recebimentos online</h3>
+<h2>A melhor experiência para o seu paciente do pré ao pós atendimento</h2>
+<h3>App exclusivo e personalizado para sua clínica</h3>
+<h3>Gerenciador do App</h3>
+<h3>Área do paciente</h3>
+<h3>Recebimentos online</h3>
+<h2>O que a VSaúde proporcionapara a sua clínica ​</h2>
+<h2>A Tecnologia de clínicas multimilionárias em suas mãos</h2>
+<h3>Seja referência hoje</h3>
+<h2>Experiência Premium para Seus Pacientes</h2>
+<h3>Explore as nossas soluções</h3>
+<h2>Aumente a Adesão ao Tratamento em 33%*</h2>
+<h3>Melhore a adesão aos tratamentos</h3>
+<h2>Clínicas que já transformaram a experiência dos seus pacientes</h2>
+<h2>Por que escolher a VSaúde?</h2>
+<h2>Alguns números que comprovam a importância deum aplicativo médico na vida dos pacientes</h2>
+<h3>130%</h3>
+<h3>77%</h3>
+<h2>Como o seu APP é feito</h2>
+<h2>Saiba como é o processo de desenvolvimento do seu app</h2>
+<h3>kick-off</h3>
+<h3>design</h3>
+<h3>criação do aplicativo médico</h3>
+<h3>testes</h3>
+<h3>publicação</h3>
+<h2>Amamos e somos amados pormais de 2.397 médicos.</h2>
+<h2>Veja o que alguns de nossos clientes dizem sobre a plataforma VSaúde e seu aplicativo médico</h2>
+<h3>Dr. Gustavo Oliveira</h3>
+<h3>Dra. Ana Rosa</h3>
+<h3>Dr. Wellington Epaminondas</h3>
+<h3>Dra. Fernanda Guidolin</h3>
+<h3>Dr. Eduardo Guerra</h3>
+<h3>Dra. Raquel Scherer Fraga</h3>
+<h3>Dra. Fernanda Guidolin</h3>
+<h3>Eduardo Guerra</h3>
+<h3>Dra. Raquel Scherer Fraga</h3>
+<h3>Dra. Fernanda Guidolin</h3>
+<h3>Dr. Eduardo Guerra</h3>
+<h3>Dra. Raquel Scherer Fraga</h3>
+<h2>Queremos transformar a forma comovocê cuida da vida dos seus pacientes</h2>

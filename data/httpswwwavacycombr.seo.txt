@@ -1,0 +1,24 @@
+<title>Avacy Distribuidora | Atacado de Calçados - Revenda de Calçados</title>
+<meta name="description" content="A Avacy Distribuidora é uma empresa de atacado de calçados. Com tradição de mais de 53 anos no mercado, revendendo as melhores marcas de calçados no atacado para todo Brasil.">
+<h2>Feminino</h2>
+<h2>Masculino</h2>
+<h2>Infantil</h2>
+<h2>Acessórios</h2>
+<h2>Mais Vendidos</h2>
+<h2>Feminino</h2>
+<h2>Masculino</h2>
+<h2>Infantil</h2>
+<h2>Feminino</h2>
+<h2>Masculino</h2>
+<h2>Infantil</h2>
+<h2>Havaianas</h2>
+<h2>Feminino</h2>
+<h2>Masculino</h2>
+<h2>Infantil</h2>
+<h2>Inverno</h2>
+<h3>Marcas</h3>
+<h2>Confira as Ofertas da Black</h2>
+<h2>Mais vendidos</h2>
+<h2>COMPRE POR CATEGORIA</h2>
+<h2>NOSSAS VANTAGENS</h2>
+<h3>Nossas marcas</h3>

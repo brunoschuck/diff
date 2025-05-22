@@ -1,0 +1,20 @@
+<title>Software Médico para Clínicas e Consultórios - Amigo Tech</title>
+<meta name="description" content="Amigo é um Software Médico para auxiliar Clínicas e Consultórios a melhorarem sua gestão e ter mais tempo para cuidar de seus pacientes.">
+<h1>Soluções que simplificam</h1>
+<h1>Soluções que simplificam</h1>
+<h2>Soluções que acompanham seu crescimento profissional</h2>
+<h3>Sou recém-formado</h3>
+<h3>Sou autônomo</h3>
+<h3>Tenho minha clínica</h3>
+<h3>Sou sênior</h3>
+<h2>Por que escolher soluções Amigo?</h2>
+<h3>Design</h3>
+<h3>Suporte ao cliente</h3>
+<h3>Privacidade</h3>
+<h2>Principais produtos e serviços</h2>
+<h2>Quem usa e confia</h2>
+<h3>Drª. Mamy Honda</h3>
+<h3>Dr. José Figueiredo Penteado</h3>
+<h3>Dr. Carlos Romeiro</h3>
+<h2>Entre em contato</h2>
+<h3>Fale com a gente no WhatsApp</h3>

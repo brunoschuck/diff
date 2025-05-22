@@ -1,0 +1,208 @@
+<title>Repediu | CRM para Delivery e Restaurante - Repediu</title>
+<meta name="description" content="Descubra o Repediu, o CRM delivery ideal para restaurantes que querem aumentar vendas, fidelizar clientes e automatizar seu atendimento!">
+<h3>Conheça seu cliente a fundo</h3>
+<h3>Aumente a sua recorrência</h3>
+<h3>Recupere clientes</h3>
+<h3>Automatize campanhas para clientes</h3>
+<h3>Venda sem depender de app</h3>
+<h3>Otimize a aquisição de clientes</h3>
+<h2>Funcionalidades da Plataforma</h2>
+<h3>Marketing e Comunicação</h3>
+<h3>Segmentação Inteligente</h3>
+<h3>Campanhas Automatizadas</h3>
+<h3>Cupons Personalizados</h3>
+<h3>Reativação de Clientes</h3>
+<h3>Automação Multicanal</h3>
+<h3>Experiência e Fidelização</h3>
+<h3>Perfil do Cliente</h3>
+<h3>Recompra e Retenção</h3>
+<h3>Previsão de LTV</h3>
+<h3>Datas Estratégicas</h3>
+<h3>Operações e Inteligência</h3>
+<h3>Dashboard de Resultados</h3>
+<h3>Análise de Retenção</h3>
+<h3>RFV Configurável</h3>
+<h3>Unificação de Base (IA)</h3>
+<h3>Atribuição de Conversão</h3>
+<h3>Integrações & Canais</h3>
+<h3>ERPs e Cardápios</h3>
+<h3>Meta Ads</h3>
+<h3>API e Webhooks</h3>
+<h3>Google & TikTok Ads (em breve)</h3>
+<h3>Configurações & Suporte</h3>
+<h3>Cadastro Operacional</h3>
+<h3>Gerenciamento de Usuários</h3>
+<h3>Base de Conhecimento</h3>
+<h3>Canal de Suporte</h3>
+<h2>Por tipo de operação</h2>
+<h3>Franquias</h3>
+<h3>Rede de Restaurantes</h3>
+<h3>Rede de Restaurantes</h3>
+<h2>Por produto vendido</h2>
+<h3>🍕 Pizzaria</h3>
+<h3>🍔 Hamburgueria</h3>
+<h3>🥙 Esfiharia</h3>
+<h3>🥣 Açaiteria</h3>
+<h3>🥟 Pastelaria</h3>
+<h3>🍰 Confeitaria</h3>
+<h3>🍣 Comida Japonesa</h3>
+<h3>🍝 Comida Italiana</h3>
+<h3>🥪 Lanchonete</h3>
+<h3>🍦 Sorveteria</h3>
+<h3>Para agências de marketing</h3>
+<h3>Para consultores e Influenciadores</h3>
+<h3>Conheça seu cliente a fundo</h3>
+<h3>Aumente a sua recorrência</h3>
+<h3>Recupere clientes</h3>
+<h3>Automatize campanhas para clientes</h3>
+<h3>Venda sem depender de app</h3>
+<h3>Otimize a aquisição de clientes</h3>
+<h2>Funcionalidades da Plataforma</h2>
+<h3>Marketing e Comunicação</h3>
+<h3>Segmentação Inteligente</h3>
+<h3>Campanhas Automatizadas</h3>
+<h3>Cupons Personalizados</h3>
+<h3>Reativação de Clientes</h3>
+<h3>Automação Multicanal</h3>
+<h3>Experiência e Fidelização</h3>
+<h3>Perfil do Cliente</h3>
+<h3>Recompra e Retenção</h3>
+<h3>Previsão de LTV</h3>
+<h3>Datas Estratégicas</h3>
+<h3>Operações e Inteligência</h3>
+<h3>Dashboard de Resultados</h3>
+<h3>Análise de Retenção</h3>
+<h3>RFV Configurável</h3>
+<h3>Unificação de Base (IA)</h3>
+<h3>Atribuição de Conversão</h3>
+<h3>Integrações & Canais</h3>
+<h3>ERPs e Cardápios</h3>
+<h3>Meta Ads</h3>
+<h3>API e Webhooks</h3>
+<h3>Google & TikTok Ads (em breve)</h3>
+<h3>Configurações & Suporte</h3>
+<h3>Cadastro Operacional</h3>
+<h3>Gerenciamento de Usuários</h3>
+<h3>Base de Conhecimento</h3>
+<h3>Canal de Suporte</h3>
+<h2>Por tipo de operação</h2>
+<h3>Franquias</h3>
+<h3>Rede de Restaurantes</h3>
+<h3>Rede de Restaurantes</h3>
+<h2>Por produto vendido</h2>
+<h3>🍕 Pizzaria</h3>
+<h3>🍔 Hamburgueria</h3>
+<h3>🥙 Esfiharia</h3>
+<h3>🥣 Açaiteria</h3>
+<h3>🥟 Pastelaria</h3>
+<h3>🍰 Confeitaria</h3>
+<h3>🍣 Comida Japonesa</h3>
+<h3>🍝 Comida Italiana</h3>
+<h3>🥪 Lanchonete</h3>
+<h3>🍦 Sorveteria</h3>
+<h3>Para agências de marketing</h3>
+<h3>Para consultores e Influenciadores</h3>
+<h3>Conheça seu cliente a fundo</h3>
+<h3>Aumente a sua recorrência</h3>
+<h3>Recupere clientes</h3>
+<h3>Automatize campanhas para clientes</h3>
+<h3>Venda sem depender de app</h3>
+<h3>Otimize a aquisição de clientes</h3>
+<h2>Por tipo de operação</h2>
+<h3>Lojas únicas com delivery</h3>
+<h3>Rede de Restaurantes</h3>
+<h3>Franquias</h3>
+<h2>Por produto vendido</h2>
+<h3>🍕 Pizzaria</h3>
+<h3>🍔 Hamburgueria</h3>
+<h3>🥙 Esfiharia</h3>
+<h3>🥣 Açaiteria</h3>
+<h3>🥟 Pastelaria</h3>
+<h3>🍰 Confeitaria</h3>
+<h3>🍣 Comida Japonesa</h3>
+<h3>🍝 Comida Italiana</h3>
+<h3>🥪 Lanchonete</h3>
+<h3>🍦 Sorveteria</h3>
+<h3>Para agências de marketing</h3>
+<h3>Para consultores e Influenciadores</h3>
+<h3>Conheça seu cliente a fundo</h3>
+<h3>Aumente a sua recorrência</h3>
+<h3>Recupere clientes</h3>
+<h3>Automatize campanhas para clientes</h3>
+<h3>Venda sem depender de app</h3>
+<h3>Otimize a aquisição de clientes</h3>
+<h2>Por tipo de operação</h2>
+<h3>Lojas únicas com delivery</h3>
+<h3>Rede de Restaurantes</h3>
+<h3>Franquias</h3>
+<h2>Por produto vendido</h2>
+<h3>🍕 Pizzaria</h3>
+<h3>🍔 Hamburgueria</h3>
+<h3>🥙 Esfiharia</h3>
+<h3>🥣 Açaiteria</h3>
+<h3>🥟 Pastelaria</h3>
+<h3>🍰 Confeitaria</h3>
+<h3>🍣 Comida Japonesa</h3>
+<h3>🍝 Comida Italiana</h3>
+<h3>🥪 Lanchonete</h3>
+<h3>🍦 Sorveteria</h3>
+<h3>Para agências de marketing</h3>
+<h3>Para consultores e Influenciadores</h3>
+<h1>CRM para delivery e restaurante</h1>
+<h2>CRM que reativa sua base, traz clientes de volta e faz eles comprarem com mais frequência - sem taxas de marketplace</h2>
+<h2>Conecte seu cardápio, ERP e histórico de vendas para criar campanhas automatizadas no Whats/SMS que aumentam sua receita com quem já conhece seu negócio.</h2>
+<h2>Junte-se aos +1391 deliveries e restaurantes com gestão de recorrência inteligente</h2>
+<h2>O segredo do delivery de sucesso</h2>
+<h2>A diferença entre vender no escuro e a recorrência estratégica:</h2>
+<h3>Sem a Repediu</h3>
+<h3>Com a Repediu</h3>
+<h2>Você pluga, pega os dados dos seus sistemas e vende recorrente.</h2>
+<h2>Três passos separam você de vender mais para quem já é seu cliente</h2>
+<h3>1. Integre o seu cardápio digital</h3>
+<h2>Carlos</h2>
+<h2>Gerente, MaxDog, Jales-SP</h2>
+<h2>Carlos</h2>
+<h2>Gerente, MaxDog, Jales-SP</h2>
+<h3>"É fácil demais pegar os números dos clientes com a Repediu, isso é muito valioso.”</h3>
+<h3>2. Saiba em detalhes como seus clientes compram de você</h3>
+<h2>Tiago</h2>
+<h2>Capitão Espetto, Araras-SP</h2>
+<h2>Tiago</h2>
+<h2>Capitão Espetto, Araras-SP</h2>
+<h3>"Com a Repediu a gente realmente conseguiu um faturamento mais sólido e contínuo. Todos os meses a gente cresce."</h3>
+<h3>3. Personalize e automatize suas mensagens pelo WhatsApp</h3>
+<h2>Jonatan Alencar</h2>
+<h2>CEO, Pizza Supreme</h2>
+<h2>Jonatan Alencar</h2>
+<h2>CEO, Pizza Supreme, Salvador-BA</h2>
+<h3>"Não tem nada melhor do que saber quem são os seus clientes fiéis ou em risco e falar com eles de acordo."</h3>
+<h2>Conecte-se diretamente com os principais food apps do país</h2>
+<h2>Já ajudamos
+milhares de deliveries e restaurantes no Brasil todo!</h2>
+<h2>Veja o que donos de deliveries e restaurantes falam</h2>
+<h2>Lemão</h2>
+<h2>Destak Lanches, Araras-SP</h2>
+<h3>"A gente conseguiu resgatar bastante cliente que fazia muito tempo que não pedia. É uma plataforma que dá muita informação, agente consegue captar realmente as nossas necessidades, que é recuperação de cliente, e manter o cliente também. Então, a Repediu veio para realmente melhorar o nosso resultado."</h3>
+<h2>Tiago</h2>
+<h2>Capittão Espeto, Araras-SP</h2>
+<h3>"Com a Repediu a gente realmente conseguiu um faturamento mais sólido e contínuo. Todos os meses a gente cresce. Isso já nos deu uma segurança maior no trabalho que está sendo feito. Então, pra gente, a Repediu é excelente, excelente!"</h3>
+<h2>Carlos</h2>
+<h2>Max Dog Lanches, Jales-SP</h2>
+<h3>"O custo de aquisição do cliente é muito grande, mas com a Repediu começamos a manter esse cliente ali, ele começou a comprar mais vezes. Hoje, é muito difícil você metrificar algum a retenção. A Repediu traz esses números de uma forma fácil, isso é muito valioso."</h3>
+<h2>Alison</h2>
+<h2>Brigata Pizzeria, Ponta Grossa-PR</h2>
+<h3>“Dentro de 2 meses com as campanhas básicas tivemos quase 60k de recompra, uma ferramenta poderosa que ajuda muito no resgate de clientes que estavam perdidos.
+Indico para qualquer um que possua o sistema que integre com a ferramenta, pois vai colher os resultados.”</h3>
+<h2>Bruno</h2>
+<h2>American Chicken, Rio Branco-AC</h2>
+<h3>"O Repediu tá mudando o meu negócio, a plataforma transformou nossa forma de trabalhar com marketing. As campanhas automatizadas nos ajudaram a aumentar a recorrência dos clientes e os dados detalhados nos dão uma visão clara de como está o desempenho da empresa todos os dias. Com essas informações, conseguimos tomar decisões rápidas e estratégicas. É uma ferramenta completa e indispensável!"</h3>
+<h2>Lenon Martil</h2>
+<h2>Sushi Lenon, Monte Aprazível-SP</h2>
+<h3>"Através das segmentações inteligentes de clientes da Repediu, conseguimos criar campanhas de marketing altamente assertivas, resultando em grandes taxas de conversão e aumento significativo na fidelização de clientes. É uma ferramenta essencial para quem deseja impulsionar as vendas e fortalecer o relacionamento com o público. Recomendamos para qualquer negócio do setor gastronômico que busca resultados reais!"</h3>
+<h3>Recupere clientes em apenas 10 dias, sem precisar criar nada.</h3>
+<h3>Com a nossa Implantação facilitada, a gente conecta os seus dados, analisa os seus clientes e dispara as primeiras campanhas. Você só se preocupa em lucrar.</h3>
+<h3>Suporte pensado para você, empresário.</h3>
+<h2>Nada de ficar esperando a ajuda que não chega!</h2>
+<h2>Fidelize mais e pare de depender de marketplaces</h2>
+<h3>Plugue seus sistemas e aumente a recorrência.</h3>
+<h2>FAQ - Perguntas frequentes</h2>

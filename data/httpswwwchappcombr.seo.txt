@@ -1,0 +1,12 @@
+<title>App Para Marcar Consulta com Desconto | Chapp</title>
+<meta name="description" content="Chapp: agende consultas com praticidade, conforto e até 70% de desconto. Cuide da sua saúde com o melhor atendimento médico, tudo em um só app!">
+<h1>A saúde que você precisapelo preço que pode pagar!</h1>
+<h2>+ Agilidade</h2>
+<h2>+ Qualidade</h2>
+<h2>+ Prevenção</h2>
+<h2>+ Benefícios</h2>
+<h2>+ de 40 Especialidades</h2>
+<h2>+ de 1.000 serviços médicos</h2>
+<h2>+ Otimização</h2>
+<h2>Rede Credenciada</h2>
+<h1>O Médico que você precisaestá mais perto do que você imagina</h1>

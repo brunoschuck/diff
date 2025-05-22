@@ -1,0 +1,30 @@
+<title>Grupo BraslectraFerramentas de acessibilidadeAumentar textoDiminuir textoEscala de cinzaAlto contrasteContraste negativoFundo claroLinks sublinhadosFonte legívelRedefinir</title>
+<meta name="description" content="O Grupo Braslectra, foi fundado em 1997, formado por empresas especializadas no setor de transporte executivo de passageiros com carros, vans, micro-ônibus e">
+<h2>Conheça o Grupo Braslectra</h2>
+<h2>Atendemos em todo o Brasil</h2>
+<h1>Confira nosso vídeo institucional!</h1>
+<h1>Nossa frota de veículos</h1>
+<h1>O que o Grupo Braslectra pode fazer por você</h1>
+<h1>Por que o Grupo Braslectra?</h1>
+<h3>Não terceirizamos o serviço</h3>
+<h3>Frota caracterizada</h3>
+<h3>Atendimento de logística 24h</h3>
+<h3>Veículos rastreados</h3>
+<h3>O Grupo Braslectra possui uma logística sustentável</h3>
+<h1>Empresas que confiam no Grupo Braslectra</h1>
+<h3>“O conhecimento é o caminho para a excelência.”</h3>
+<h1>Nosso Blog</h1>
+<h2>AQUISIÇÃO DE 04 NOVOS ÔNIBUS IDEALE 800!</h2>
+<h2>AQUISIÇÃO DE 02 NOVOS MICRO-ÔNIBUS FLY 9!</h2>
+<h2>CHEGOU NOVIDADE!</h2>
+<h2>RENOVAÇÃO DE FROTA</h2>
+<h2>ESCOLHA VIAJAR COM A BUSER E O GRUPO BRASLECTRA!</h2>
+<h2>PARCERIA COM A BUSER!</h2>
+<h2>ENTENDA SOBRE AS NOSSAS POLTRONAS!</h2>
+<h2>A JORNADA DE RENOVAÇÃO DO GRUPO BRASLECTRA NO MUNDO DO TRANSPORTE EXECUTIVO</h2>
+<h3>AQUISIÇÃO DE 04 NOVOS ÔNIBUS IDEALE 800!</h3>
+<h3>AQUISIÇÃO DE 02 NOVOS MICRO-ÔNIBUS FLY 9!</h3>
+<h3>CHEGOU NOVIDADE!</h3>
+<h3>RENOVAÇÃO DE FROTA</h3>
+<h3>ESCOLHA VIAJAR COM A BUSER E O GRUPO BRASLECTRA!</h3>
+<h3>PARCERIA COM A BUSER!</h3>

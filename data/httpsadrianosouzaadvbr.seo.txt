@@ -1,0 +1,87 @@
+<title>ACS Advocacia Previdenciária Especializada</title>
+<meta name="description" content="Cuidamos dos seus Direitos de Forma Online e Presencial. Especializado em Direito Previdenciário. Aposentadoria, Pensão por Morte, Auxílio acidente e outros.">
+<h2>Cuidamos dos seus Direitos de Forma Online e Presencial.</h2>
+<h1>Atendemos de Forma Online e Presencial.</h1>
+<h3>Fale Conosco</h3>
+<h2>Adriano Celso de Souza</h2>
+<h2>Veja nossas avaliações do Google</h2>
+<h3>Nosso Escritório</h3>
+<h2>Conheça Nossa Equipe</h2>
+<h2>Dr. Adriano Celso de Souza</h2>
+<h2>Advogado Fundador</h2>
+<h2>Advogado, inscrito na OAB/PR nº 70.463 e OAB/SP 463.944.
+Graduado em Direito pela Universidade Tuiuti do Paraná – UTP.
+Pós-Graduado em Direito do Trabalho e Processual do Trabalho pelo Centro Universitário Curitiba – Unicuritiba.
+Especialista em Direito Previdenciário pela ESMAFE/PR e IBDP.</h2>
+<h2>Dra. Juliana Orth Diehl</h2>
+<h2>Advogada Associada</h2>
+<h2>Advogada, inscrita na OAB/PR nº 83.838
+Graduada em Direito pela Universidade Tuiuti do Paraná – UTP
+Pós Graduanda em Direito Previdenciário Contemporâneo pela Escola de Magistratura Federal do Paraná – ESMAFE.</h2>
+<h2>Dr. Lucas Piero Daros</h2>
+<h2>Advogado Associado</h2>
+<h2>Advogado OAB/PR 76.037. Graduado em Direito pelo Centro Universitário Curitiba – UNICURITIBA. Pós-graduado em Direito Penal e Processo Penal pela Academia Brasileira de Direito Constitucional – ABDConst. Pós-Graduando em Direito Previdenciário Contemporâneo pela Escola de Magistratura Federal do Paraná – ESMAFE PR.</h2>
+<h2>Dr. Vander Doro Dias</h2>
+<h2>Advogado Associado</h2>
+<h2>Advogado, inscrito na OAB/PR nº 127.773. Graduado em Direito pela Universidade Católica de Pelotas - UCPEL.
+Pós Graduando em Direito Trabalhista e Previdenciário pelo Centro Universitário UniAmérica Descomplica - UniAmérica. Especialista em Gestão Fiscal e Tributária e em Gestão Financeira e Controladoria.</h2>
+<h2>Ruane Carneiro</h2>
+<h2>Gerente de Escritório</h2>
+<h2>Estudante de Direito da Faculdade Uninter.
+Curso de Capacitação em Direito Previdenciário: “A Nova Previdência e o Futuro da Judicialização pela ESMAFE/PR.</h2>
+<h2>Dr. Adriano Celso de Souza</h2>
+<h2>Advogado Fundador</h2>
+<h2>Advogado, inscrito na OAB/PR nº 70.463 e OAB/SP 463.944.
+Graduado em Direito pela Universidade Tuiuti do Paraná – UTP.
+Pós-Graduado em Direito do Trabalho e Processual do Trabalho pelo Centro Universitário Curitiba – Unicuritiba.
+Especialista em Direito Previdenciário pela ESMAFE/PR e IBDP.</h2>
+<h2>Dra. Juliana Orth Diehl</h2>
+<h2>Advogada Associada</h2>
+<h2>Advogada, inscrita na OAB/PR nº 83.838
+Graduada em Direito pela Universidade Tuiuti do Paraná – UTP
+Pós Graduanda em Direito Previdenciário Contemporâneo pela Escola de Magistratura Federal do Paraná – ESMAFE</h2>
+<h2>Dr. Lucas Piero Daros</h2>
+<h2>Advogado Associado</h2>
+<h2>Advogado OAB/PR 76.037. Graduado em Direito pelo Centro Universitário Curitiba – UNICURITIBA. Pós-graduado em Direito Penal e Processo Penal pela Academia Brasileira de Direito Constitucional – ABDConst. Pós-Graduando em Direito Previdenciário Contemporâneo pela Escola de Magistratura Federal do Paraná – ESMAFE PR.</h2>
+<h2>Ana Claudia de Souza</h2>
+<h2>Bacharel em Direito</h2>
+<h2>Formada pela UNC - Universidade do Contestado de Porto União.</h2>
+<h2>Gabriella Biatriz Lomas</h2>
+<h2>Secretaria | Aux. Administrativa</h2>
+<h2>Curso de Auxiliar administrativo - SENAI-PR; Cursando Gestão de Recursos Humanos na Universidade Tuiuti do Paraná.</h2>
+<h2>Crystopher Gaertner</h2>
+<h2>Comunicação</h2>
+<h2>Comunicação e Marketing com Ênfase
+em Estratégias para Advocacia.</h2>
+<h2>Dr. Vander Doro Dias</h2>
+<h2>Advogado Associado​</h2>
+<h2>Advogado, inscrito na OAB/PR nº 127.773. Graduado em Direito pela Universidade Católica de Pelotas - UCPEL.
+Pós Graduando em Direito Trabalhista e Previdenciário pelo Centro Universitário UniAmérica Descomplica - UniAmérica. Especialista em Gestão Fiscal e Tributária e em Gestão Financeira e Controladoria.</h2>
+<h2>Ruane Carneiro</h2>
+<h2>Gerente de Escritório</h2>
+<h2>Estudante de Direito da Faculdade Uninter.
+Curso de Capacitação em Direito Previdenciário: “A Nova Previdência e o Futuro da Judicialização pela ESMAFE/PR.</h2>
+<h2>Ana Claudia de Souza</h2>
+<h2>Bacharel em Direito</h2>
+<h2>Formada pela UNC - Universidade do Contestado de Porto União.</h2>
+<h2>Gabriella Biatriz Lomas</h2>
+<h2>Secretaria | Aux. Administrativa</h2>
+<h2>Curso de Auxiliar administrativo - SENAI-PR; Cursando Gestão de Recursos Humanos na Universidade Tuiuti do Paraná.</h2>
+<h2>Crystopher Gaertner</h2>
+<h2>Comunicação</h2>
+<h2>Comunicação e Marketing com Ênfase
+em Estratégias para Advocacia.</h2>
+<h2>Nosso Escritório</h2>
+<h2>O Escritório</h2>
+<h2>Equipe de Especialistas</h2>
+<h2>Diferenciais do Escritório</h2>
+<h2>Ética e Responsabilidade</h2>
+<h2>Escritório em Curitiba</h2>
+<h2>Escritório em São Paulo</h2>
+<h2>Atendimento Online em todo Brasil</h2>
+<h2>Atendimento Presencial</h2>
+<h2>Curitiba-paraná</h2>
+<h2>São Paulo - Capital</h2>
+<h2>Escritórios</h2>
+<h2>Apoiamos</h2>
+<h2>ATENÇÃO</h2>

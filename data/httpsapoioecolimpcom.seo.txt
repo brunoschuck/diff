@@ -1,0 +1,22 @@
+<title>Grupo Apoio - Empresa De Facilities</title>
+<meta name="description" content="Empresa de facilities para hospitais que oferece soluções integradas em manutenção, limpeza, logística e mais.">
+<h1>Gestão eficiente na palma da sua mão.</h1>
+<h2>Nós cuidamos de tudo para você!</h2>
+<h3>Higienização Hospitalar</h3>
+<h3>Hotelaria Hospitalar</h3>
+<h3>Rouparia Hospitalar</h3>
+<h3>Recepção e Portaria</h3>
+<h3>Logística Interna</h3>
+<h3>Manutenção Predial</h3>
+<h2>+10 mil profissionais treinados para o melhor atendimento</h2>
+<h2>Porque nos importamos com ambientes saudáveis e livres de contaminação</h2>
+<h3>Atendimento Humanizado</h3>
+<h3>Inovação e Sustentabilidade</h3>
+<h3>Qualidade ISO 9001</h3>
+<h2>Por dentro da Apoio</h2>
+<h2>Conheça os benefícios de um controle de acesso qualificado para as instituições</h2>
+<h2>O que é Limpeza e Higienização Hospitalar</h2>
+<h2>Higiene das mãos: uma atitude simples que salva vidas.</h2>
+<h2>Higiene Ambiental em Hospitais: Elimine Riscos de Infecções</h2>
+<h2>Fluxograma de um Hospital: O que é e Como Funciona?</h2>
+<h2>Saúde é o nosso propósito</h2>
